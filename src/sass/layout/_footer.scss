@@ -1,0 +1,204 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.footer {
+  overflow: hidden;
+  position: relative;
+  margin: 86px 0;
+
+  &:after {
+    content: '';
+    width: calc(100% - 18.75rem);
+    background: #2C3837;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__top {
+    padding: 43px 0 36px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 29px 0 0 0;
+    }
+
+    & .logo {
+      @media (max-width: $breakpoint-md) {
+        margin: 0 auto;
+      }
+
+      &__link {
+        display: block;
+        margin-bottom: 25px;
+        @media (max-width: $breakpoint-md) {
+          margin-bottom: 12px;
+        }
+      }
+
+      &__description {
+        font-size: 16px;
+        margin-bottom: 37px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    & .social {
+      &-item {
+        border: 1px solid #CEC1B6;
+
+        & i {
+          color: #CEC1B6;
+        }
+
+        &:hover {
+          border-color: #4B6553;
+
+          & i {
+            color: #4B6553;
+          }
+        }
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: $breakpoint-md) {
+
+        margin: 0 auto 25px auto;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 24px 0 31px 0;
+
+
+    & .column {
+      @media (max-width: $breakpoint-md) {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 11px;
+      }
+    }
+  }
+
+
+  &-info {
+    &__wrap {
+      @media (max-width: $breakpoint-md) {
+        padding: 0 0 30px 0;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 15px;
+      font-size: 20px;
+      @media (max-width: $breakpoint-md) {
+        font-size: 17px;
+      }
+    }
+
+    & .menu {
+      gap: 15px;
+      display: grid;
+      @media (max-width: $breakpoint-md) {
+        gap: 10px;
+      }
+
+      &-item {
+        & a {
+          font-size: 16px;
+          font-weight: 300;
+          @include transition(.4);
+          @media (max-width: $breakpoint-md) {
+            font-size: 14px;
+          }
+
+          &:hover {
+            color: rgba(75, 101, 83, 1);
+          }
+        }
+
+      }
+    }
+
+    & .contact {
+      gap: 15px;
+      display: grid;
+      @media (max-width: $breakpoint-md) {
+        gap: 10px;
+      }
+
+      &-item {
+        font-size: 20px;
+        font-weight: 400;
+        @media (max-width: $breakpoint-md) {
+          font-size: 14px;
+        }
+        @media (max-width: 400px) {
+          font-size: 13px;
+        }
+
+        & a[href^="mailto:"] {
+          color: rgba(75, 101, 83, 1);
+
+        }
+      }
+
+    }
+  }
+
+  &-links {
+    gap: 50px;
+    @media (max-width: $breakpoint-md) {
+      gap: 30px;
+      width: 100%;
+    }
+
+    & li {
+      & a {
+        @include fontSize(13, 16);
+
+        font-weight: 300;
+        color: rgba(75, 101, 83, 1);
+
+      }
+
+    }
+  }
+
+  & .copyright {
+    @include fontSize(13, 16);
+    font-weight: 300;
+    color: rgba(139, 117, 96, 1);
+  }
+
+  & .develop {
+    &__link, &__text {
+      @include fontSize(13, 16);
+      font-weight: 300;
+
+    }
+
+    &__text {
+      color: rgba(139, 117, 96, 1);
+    }
+
+    &__link {
+      color: rgba(75, 101, 83, 1);
+      padding-left: 5px;
+    }
+  }
+}
+
