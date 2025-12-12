@@ -19,10 +19,10 @@
 
 
 <header class="header js-header bg"><!-- на свіх сторінках, крім головної, в header додається клас bg-->
-    <div class=" container">
+    <div class=" container-fluid p-0">
 
-        <div class="d-flex d-lg-none align-middle align-justify">
-            <a href="index.html" class="logo__wrap d-block d-lg-none">
+        <div class="d-flex d-md-none align-middle align-justify">
+            <a href="index.html" class="logo__wrap">
                 <img src="assets/img/logo.svg" alt="Alma group" class="logo">
             </a>
 
@@ -38,8 +38,12 @@
         <div class="header__inner ">
             <div class="header__main d-flex align-justify align-middle">
 
+                <a href="index.html" class="logo__wrap">
+                    <img src="assets/img/logo.svg" alt="Alma group" class="logo">
+                </a>
+
                 <ul class="menu">
-                    <li class="menu-item ">
+                    <li class="menu-item menu-item-active">
                         <a href="">Головна</a>
                     </li>
                     <li class="menu-item ">
@@ -61,6 +65,7 @@
                         <a href="tel:0637818787"> 063 781 87 87</a>
                     </div>
                 </div>
+
                 <ul class="social d-flex align-middle">
                     <li class="social-item">
                         <a href="" class="d-flex align-center align-middle">
@@ -122,49 +127,49 @@
         </div>
     </section>
 
-    <section class="s-benefit section">
+    <section class="s-vision section">
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
                     <h1 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
                         Комфортне житло Alma Group
                     </h1>
-                    <div class="benefit__wrap">
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
+                    <div class="vision__wrap">
+                        <div class="vision">
+                            <div class="vision__icon-wrap d-flex align-middle align-center">
+                                <img src="assets/img/ad-1.svg" alt="" class="vision__icon">
                             </div>
-                            <div class="benefit__title text-bold">Якість</div>
-                            <div class="benefit__text text-light">
+                            <div class="vision__title text-bold">Якість</div>
+                            <div class="vision__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-2.svg" alt="" class="benefit__icon">
+                        <div class="vision">
+                            <div class="vision__icon-wrap d-flex align-middle align-center">
+                                <img src="assets/img/ad-2.svg" alt="" class="vision__icon">
                             </div>
-                            <div class="benefit__title text-bold">Спільнота</div>
-                            <div class="benefit__text text-light">
+                            <div class="vision__title text-bold">Спільнота</div>
+                            <div class="vision__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-3.svg" alt="" class="benefit__icon">
+                        <div class="vision">
+                            <div class="vision__icon-wrap d-flex align-middle align-center">
+                                <img src="assets/img/ad-3.svg" alt="" class="vision__icon">
                             </div>
-                            <div class="benefit__title text-bold">Комфорт</div>
-                            <div class="benefit__text text-light">
+                            <div class="vision__title text-bold">Комфорт</div>
+                            <div class="vision__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-4.svg" alt="" class="benefit__icon">
+                        <div class="vision">
+                            <div class="vision__icon-wrap d-flex align-middle align-center">
+                                <img src="assets/img/ad-4.svg" alt="" class="vision__icon">
                             </div>
-                            <div class="benefit__title text-bold">Інфраструктура</div>
-                            <div class="benefit__text text-light">
+                            <div class="vision__title text-bold">Інфраструктура</div>
+                            <div class="vision__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
@@ -178,7 +183,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
-                    <h1 class="heading text-extrabold h1 heading-font">
+                    <h1 class="heading text-extrabold h1 heading-font text-uppercase">
                         Про компанію
                     </h1>
 
@@ -186,14 +191,21 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
+            <div class="row m-row">
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-16 col-xs-16 column">
                     <div class="description">
                         Вітаємо в котеджному містечку Alma Group
                         Реалізуючи проєкт, ми постійно питаємо себе, чи можливо зробити ще краще? І тільки відповідаючи,
                         що вже обрали краще — продовжуємо
 
-                        Наша команда експертів втілює в життя архітектурні рішення будь-якої складності. Використання
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-16 col-xs-16 column">
+                    <div class="description">
+
+
+                        <B>Наша команда експертів</B> втілює в життя архітектурні рішення будь-якої складності.
+                        Використання
                         надійних технологій та відкритість до інновацій дозволяє нам створювати стійкі та сучасні
                         будівлі.
                     </div>
@@ -220,752 +232,381 @@
         </div>
     </section>
 
-
-    <section class="s-category">
+    <section class="s-projects-home">
         <div class="container">
-            <div class="row m-row mb-45">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <div class="heading h2 text-bold heading-font">
-                        Одяг, що єднає покоління
+
+            <div class="row m-row tab">
+                <div class="col-xl-6 col-lg-6 col-md-16 col-sm-16 col-xs-16 column ">
+
+                    <div class="tab__list ">
+                        <div class="tab__item text-bold ">01.Про проєкт</div>
+                        <div class="tab__item text-bold ">Хіти продажів</div>
+                        <div class="tab__item text-bold">Розпродаж</div>
                     </div>
-                    <div class="description">
-                        У нас ви знайдете вишиванки для жінок, чоловіків і дітей — створені з любов’ю, натхненні
-                        українською піснею.</br>
-                        Запрошуємо до нашого каталогу.
-                    </div>
+
                 </div>
-            </div>
-            <div class="row m-row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <div class="category__wrap">
-                        <a href="catalog.html" class="category d-block">
-                            <div class="category__img-wrap d-flex align-middle align-center">
-                                <img src="assets/img/category-3.png" alt="" class="category__img">
-                            </div>
-                            <div class="category__heading heading-font">Жінкам</div>
-                            <div class="btn-more text-right heading-font">
-                                До каталогу <i class="icon-ar-right"></i>
-                            </div>
-                        </a>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-16 col-xs-16 column swiper-entry">
+                    <div class="tab__content">
+                        <div class="tab__content-item">
+                            <div class="swiper-container"
+                                 data-options='{"loop":true,"slidesPerView": 1, "spaceBetween": 15,"centeredSlides": false}'>
 
-                        <a href="catalog.html" class="category d-block">
-                            <div class="category__img-wrap d-flex align-middle align-center">
-                                <img src="assets/img/category-1.png" alt="" class="category__img">
-                            </div>
-                            <div class="category__heading heading-font">Чоловікам</div>
-                            <div class="btn-more text-right heading-font">
-                                До каталогу <i class="icon-ar-right"></i>
-                            </div>
-                        </a>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
 
-                        <a href="catalog.html" class="category d-block">
-                            <div class="category__img-wrap d-flex align-middle align-center">
-                                <img src="assets/img/category-2.png" alt="" class="category__img">
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="category__heading heading-font">Дітям</div>
-                            <div class="btn-more heading-font text-right">
-                                До каталогу <i class="icon-ar-right"></i>
+                        </div>
+
+                        <div class="tab__content-item">
+                            <div class="swiper-container"
+                                 data-options='{"loop":true,"slidesPerView": 1, "spaceBetween": 15,"centeredSlides": false}'>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence2</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="tab__content-item">
+                            <div class="swiper-container"
+                                 data-options='{"loop":true,"slidesPerView": 1, "spaceBetween": 15,"centeredSlides": false}'>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence3</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project">
+                                            <div class="project__img-wrap">
+                                                <img src="assets/img/about.png" alt=""
+                                                     class="project__img">
+                                            </div>
+
+
+                                            <div class="project__info">
+                                                <b>Alma Residence</b> — это малоэтажный жилой комплекс с собственной
+                                                инфраструктурой, расположенный недалеко от Киева, всего в 15 минутах от
+                                                Печерской. Этот уникальный мини-городок предлагает широкий выбор жилья,
+                                                включая лофты, квартиры с частными дворами и роскошные апартаменты с
+                                                живописными террасами.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="s-recommended-product">
-        <div class="container">
-
-            <div class="row m-row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column swiper-entry">
-                    <div class="tab">
-                        <div class="tab__list align-center">
-                            <div class="tab__item text-bold ">Новинки</div>
-                            <div class="tab__item text-bold ">Хіти продажів</div>
-                            <div class="tab__item text-bold">Розпродаж</div>
-                        </div>
-                        <div class="tab__content">
-                            <div class="tab__content-item">
-                                <div class="swiper-container"
-                                     data-options='{"loop":false,"slidesPerView": 2, "spaceBetween": 15,"centeredSlides": false,
-                         "breakpoints": {
-
-                        "600": {"slidesPerView":2},
-
-
-                         "767": {"slidesPerView": 3, "spaceBetween": 20,"centeredSlides": false,"loop":false},
-                         "1200": {"slidesPerView": 4,"centeredSlides": false,"loop":false, "spaceBetween": 20}}}'>
-
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-1.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-2.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-3.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab__content-item">
-                                <div class="swiper-container"
-                                     data-options='{"loop":false,"slidesPerView": 2, "spaceBetween": 15,"centeredSlides": false,
-                         "breakpoints": {
-
-                        "600": {"slidesPerView":2},
-
-
-                         "767": {"slidesPerView": 3, "spaceBetween": 20,"centeredSlides": false,"loop":false},
-                         "1200": {"slidesPerView": 4,"centeredSlides": false,"loop":false, "spaceBetween": 20}}}'>
-
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-2.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-1.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-2.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-3.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <a href="product-inner.html" class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </a>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab__content-item">
-
-                                <div class="swiper-container"
-                                     data-options='{"loop":false,"slidesPerView": 2, "spaceBetween": 15,"centeredSlides": false,
-                         "breakpoints": {
-
-                        "600": {"slidesPerView":2},
-
-
-                         "767": {"slidesPerView": 3, "spaceBetween": 20,"centeredSlides": false,"loop":false},
-                         "1200": {"slidesPerView": 4,"centeredSlides": false,"loop":false, "spaceBetween": 20}}}'>
-
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-3.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-1.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-2.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-3.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product">
-                                                <div class="product__img-wrap">
-                                                    <img src="assets/img/p-4.png" alt=""
-                                                         class="product__img">
-                                                    <div class="btn-add-to-cart d-flex align-center align-middle"><i
-                                                            class="icon-card"></i></div>
-                                                </div>
-                                                <div class="btn-fav d-flex align-center align-middle"><i
-                                                        class="icon-heart"></i>
-                                                </div>
-                                                <div class="product__info">
-
-                                                    <div class="product__title  text-bold">
-                                                        Жіноча вишита блуза Мотив Символіка
-                                                    </div>
-                                                    <div class="product__price text-bold">
-                                                        5 690 грн.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-intro --relative">
-        <div class="container">
-            <div class="row m-row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <div class="heading text-bold">
-                        Одяг бренду MOTYV – це нове життя наших традицій, що зберігає їхній символізм та доповнюється
-                        сучасною практичністю.
-                    </div>
-                    <div class="description"></div>
-                </div>
-            </div>
-            <div class="row m-row align-justify ">
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-16 col-xs-16 column">
-                    <div class="description"><p><b>MOTYV – це інтернет магазин</b>, де Ви маєте можливість придбати
-                        сучасний і
-                        якісний, а головне безпечний дитячий одяг та іграшки за доступними цінами. Основний асортимент
-                        нашого інтернет магазину представлений дитячим одягом власного виробництва.</p>
-                        <p>Ми постійно працюємо над тим, щоб запропонувати нашим клієнтам сервіс високого рівня.</p>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-16 col-xs-16 column">
-                    <div class="description">
-                        <p>Наші менеджери допоможуть при виборі розмірів і моделей, нададуть докладну інформацію про
-                            виробника одягу, про склад тканини, зручні способи оплати і швидку доставку Вашого
-                            замовлення. Ми доставляємо товар у будь-яке місто України. <b>Наша мета</b> – зробити для
-                            батьків
-                            вибір одягу для дитини приємним та комфортним та надати можливість діткам вдягатися у
-                            якісний та оригінальний одяг.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row m-row ">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <div class="benefit__wrap">
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/blog-3.png" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold text-s">Власне виробництво</div>
-                            <div class="benefit__text text-light">
-                                Ми постійно працюємо над тим, щоб запропонувати нашим клієнтам сервіс високого рівня.
-                            </div>
-                        </div>
-
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold text-s">Власне виробництво</div>
-                            <div class="benefit__text text-light">
-                                Ми постійно працюємо над тим, щоб запропонувати нашим клієнтам сервіс високого рівня.
-                            </div>
-                        </div>
-
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold text-s">Власне виробництво</div>
-                            <div class="benefit__text text-light">
-                                Ми постійно працюємо над тим, щоб запропонувати нашим клієнтам сервіс високого рівня.
-                            </div>
-                        </div>
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold text-s">Власне виробництво</div>
-                            <div class="benefit__text text-light">
-                                Ми постійно працюємо над тим, щоб запропонувати нашим клієнтам сервіс високого рівня.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="s-reviews swiper-entry">
-        <div class="container">
-            <div class="row m-row">
-                <div class="column col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
-                    <h3 class="heading heading-font text-regular h2 mb-45">Відгуки про наше вбрання</h3>
-                </div>
-            </div>
-            <div class="row m-row ">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <div class="swiper-container"
-                         data-options='{"slidesPerView": 1, "loop":false, "spaceBetween": 15,
-                         "breakpoints": {
-
-                        "600": {"slidesPerView":1},
-
-
-                         "767": {"slidesPerView": 2,"spaceBetween": 20},
-                         "1200": {"slidesPerView": 2, "spaceBetween": 20}}}'>
-
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена</div>
-                                            <div class="review__date">21 квітня, 2025</div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена</div>
-                                            <div class="review__date">21 квітня, 2025</div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена</div>
-                                            <div class="review__date"></div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена Лисенко Олена</div>
-                                            <div class="review__date">21 квітня, 2025</div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена</div>
-                                            <div class="review__date">21 квітня, 2025</div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review">
-
-                                    <div class="d-flex align-middle align-left">
-                                        <div class="review__img-box">
-                                            <img src="assets/img/blog-3.png" alt="" class="review__img">
-                                        </div>
-                                        <div class="">
-                                            <div class="review__user text-semibold">Лисенко Олена</div>
-                                            <div class="review__date">21 квітня, 2025</div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text text-light">
-                                        Як мені ваше плаття хвалили! І я собі в ньому так подобаюсь! Дякую за
-                                        оперативність, увагу і клієнтоорієнтованість! З вами було приємно мати
-                                        справу. Успіхів у вашій діяльності ? @ Україна, Київ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <section class="s-more-detail">
         <div class="container">
-            <div class="row">
+            <div class="row s-more-detail__inner --relative">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 ">
                     <h3 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
                         Цікавить детальніше?
@@ -979,7 +620,7 @@
                             <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column ">
 
                                 <div class="form-control__wrap">
-                                    <div class="form-control">
+                                    <div class="form-control no-margin">
                                         <label class="form-control__label">
                                             <input class="form-control__input " type="text" name="" value=""
                                                    placeholder="Ім’я" title="">
@@ -987,7 +628,7 @@
                                     </div>
 
 
-                                    <div class="form-control">
+                                    <div class="form-control no-margin">
                                         <label class="form-control__label">
                                             <input class="form-control__input " type="tel" name="" value=""
                                                    placeholder="Телефон" title="">
@@ -1008,50 +649,32 @@
         </div>
     </section>
 
-    <section class="s-benefit style-2">
+    <section class="s-advantages">
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
                     <h1 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
                         Ми створюємо не просто житло, а стиль життя.
                     </h1>
-                    <div class="benefit__wrap">
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Якість</div>
-                            <div class="benefit__text text-light">
+                    <div class="advantage__wrap">
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Якість</div>
+                            <div class="advantage__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-2.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Спільнота</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Комфорт</div>
+                            <div class="advantage__text text-light">
+                                — продумані планування і простір для сім’ї.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-3.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Комфорт</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
-                        </div>
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-4.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Інфраструктура</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Спільнота</div>
+                            <div class="advantage__text text-light">
+                                — середовище однодумців.
                             </div>
                         </div>
                     </div>
@@ -1065,7 +688,7 @@
             <div class="row">
 
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <h3 class="heading heading-font text-regular h2 text-uppercase">Ми дбаємо про комфорт на кожному
+                    <h3 class="heading heading-font text-extrabold h2 text-uppercase">Ми дбаємо про комфорт на кожному
                         етапі — від ідеї
                         до новосілля.</h3>
                     <div class="video-full video-block video-with-control video__wrap">
@@ -1089,15 +712,6 @@
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
                     <h3 class="heading h1 heading-font text-black  text-uppercase">Логотипи партнерів</h3>
-
-                    <div class="swiper-button__wrap d-flex align-left">
-                        <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
-                            <i class="icon-ar-left"></i>
-                        </div>
-                        <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
-                            <i class="icon-ar-right"></i>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="row">
@@ -1114,49 +728,56 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/1.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/2.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/3.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/4.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/1.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/2.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="partner__img-wrap --relative d-flex align-middle align-center">
-                                    <img src="assets/img/about.png" alt=""
+                                    <img src="assets/img/3.png" alt=""
                                          class="partner__img">
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="swiper-button__wrap d-flex align-right">
+                        <div class="swiper-button-prev d-flex align-center align-middle">
+                            <i class="icon-ar-left"></i>
+                        </div>
+                        <div class="swiper-button-next d-flex align-center align-middle">
+                            <i class="icon-ar-right"></i>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -1257,6 +878,30 @@
                 </div>
             </div>
             <div class="row m-row s-cta__row">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-16 col-xs-16 column">
+                    <ul class="contact --phone">
+                        <li class="contact-item">
+                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
+                        </li>
+                    </ul>
+                    <ul class="contact">
+                        <li class="contact-item">
+                            <a href="mailto:info@quoroom.group"
+                               class="contact__text">info@quoroom.group</a>
+                        </li>
+                        <li class="contact-item">
+                            Пн-Пт з 9:00 до 19:00
+                        </li>
+                        <li class="contact-item">
+                            <a href=""
+                               class="contact__text">м. Львів, вул. Щирецька 36, Автосалон "Рік Авто"</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-16 col-xs-16 column ">
                     <div class="s-cta__inner">
                         <form>
@@ -1309,29 +954,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
-                    <ul class="contact --phone">
-                        <li class="contact-item">
-                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
-                        </li>
-                        <li class="contact-item">
-                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
-                        </li>
-                    </ul>
-                    <ul class="contact">
-                        <li class="contact-item">
-                            <a href="mailto:info@quoroom.group"
-                               class="contact__text">info@quoroom.group</a>
-                        </li>
-                        <li class="contact-item">
-                            Пн-Пт з 9:00 до 19:00
-                        </li>
-                        <li class="contact-item">
-                            <a href=""
-                               class="contact__text">м. Львів, вул. Щирецька 36, Автосалон "Рік Авто"</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -1340,118 +962,102 @@
 
 
 <footer class="footer">
-    <div class="footer__inner overlap">
-        <div class="footer__top ">
-            <div class="container">
-                <div class="row m-row ">
-                    <div class="col-xl-4 col-lg-4 col-md-16 col-sm-16 col-xs-16 column">
-                        <a href="index.html" class="logo__link">
-                            <img src="assets/img/logo.svg" alt="" class="logo">
+    <div class="footer__bg-wrap">
+        <img src="assets/img/bg-footer.jpg" alt="" class="footer__bg">
+    </div>
+    <div class="footer__inner ">
+        <div class="container overlap">
+            <div class="row m-row footer__top">
+                <div class="col-xl-4 col-lg-4 col-md-16 col-sm-16 col-xs-16 column">
+                    <a href="index.html" class="logo__link">
+                        <img src="assets/img/logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-16 col-xs-16 column d-none d-md-block">
+
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="">Головна</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Про нас</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Проєкти</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Новини</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Контакти</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-16 col-xs-16 column">
+
+                    <ul class="contact">
+                        <li class="contact-item">
+
+                            <a href="tel:0637818787" class="contact__text">063 781 87 87</a>
+
+                        </li>
+                        <li class="contact-item">
+                            <a href="mailto:info@quoroom.group"
+                               class="contact__text">info@quoroom.group</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-16 col-xs-16 column">
+                    <ul class="social d-flex align-middle">
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-viber"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row m-row footer__bottom">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column footer__bottom-links">
+
+                    <div class="copyright">© Alma Group 2025</div>
+
+
+                    <a href="privacy-policy.html" class="privacy">
+                        Політика конфіденційності
+                    </a>
+
+                    <div class="develop d-flex align-middle align-left">
+                        Розробка-
+                        <a href="https://webtune.com.ua/" target="_blank" rel="nofollow" class="develop__link">
+                            WebTune.
                         </a>
                     </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-8 column ">
-
-                        <div class="footer-info__wrap">
-
-                            <div class="footer-info">
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="">Головна</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="">Про нас</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="">Проєкти</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="">Новини</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="">Контакти</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-8  column">
-                        <div class="footer-info__wrap">
-
-                            <div class="footer-info">
-                                <ul class="contact">
-                                    <li class="contact-item">
-
-                                        <a href="tel:0637818787" class="contact__text">063 781 87 87</a>
-
-                                    </li>
-                                    <li class="contact-item">
-                                        <a href="mailto:info@quoroom.group"
-                                           class="contact__text">info@quoroom.group</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-8  column">
-                        <ul class="social d-flex align-middle">
-                            <li class="social-item">
-                                <a href="" class="d-flex align-center align-middle">
-                                    <i class="icon-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="d-flex align-center align-middle">
-                                    <i class="icon-telegram"></i>
-                                </a>
-                            </li>
-                            <li class="social-item ">
-                                <a href="" class="d-flex align-center align-middle">
-                                    <i class="icon-whatsapp"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="d-flex align-center align-middle">
-                                    <i class="icon-viber"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="" class="d-flex align-center align-middle">
-                                    <i class="icon-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="row m-row ">
-                    <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column d-flex align-justify align-middle">
-
-                        <div class="copyright">© Alma Group 2025</div>
-
-
-                        <ul class="footer-links  d-flex align-middle align-center">
-                            <li>
-                                <a href="privacy-policy.html">
-                                    Політика конфіденційності
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="develop d-flex align-middle align-left">
-                            <div class="develop__text">Розробка-</div>
-                            <a href="https://webtune.com.ua/" target="_blank" rel="nofollow" class="develop__link">
-                                WebTune.
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </footer>
 
