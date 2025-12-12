@@ -49,43 +49,29 @@
       -ms-flex-align: center;
       align-items: center;
 
-      font-size: 12px;
+      font-size: 20px;
       font-weight: 300;
       text-align: center;
-      color: rgba(139, 117, 96, 1);
-      width: 30px;
-      height: 30px;
+      color: #2D2D2D;
+      width: 40px;
+      height: 40px;
       background: transparent;
 
-      border-radius: 4px;
+      border-radius: 100%;
       cursor: pointer;
       @include transition(.4);
 
-      margin: 0 5px;
+      margin: 0 15px;
       @media (max-width: $breakpoint-md) {
-        width: 30px;
-        height: 30px;
-        margin: 0 5px;
-        font-size: 16px;
-      }
 
-      & i {
-        @include fontSize(12, 14);
       }
-
-      &.end, &.start, &.next, &.prev {
-        background: rgba(240, 235, 232, 1);
+       &.next, &.prev {
+        background: #D8D0C7;
 
 
       }
-
-      &.current {
-        background: rgba(68, 105, 61, 1);
-        color: $white-color;
-      }
-
-      &:not(.next,.prev ,.end, .start,):hover {
-        background: rgba(68, 105, 61, 1);;
+      &:not(.next,.prev ,.end, .start,):hover,&.current {
+        background: #817973;
         color: $white-color;
       }
     }

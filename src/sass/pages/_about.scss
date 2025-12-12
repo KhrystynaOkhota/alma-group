@@ -1,7 +1,48 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.benefit {
+.advantage {
+  padding: 30px 0;
+
+  &:nth-child(1), &:nth-child(2) {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -60px;
+      height: 100%;
+      width: 1px;
+      background: rgba(49, 47, 47, 1);
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* @media (max-width: 400px) {
+       grid-template-columns: repeat(1, 1fr);
+       gap: 20px;
+     }*/
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    @include fontSize(20, 25);
+
+  }
+
+  &__text {
+    line-height: 27px;
+    max-width: 375px;
+  }
+}
+
+.vision {
   padding: 30px 20px 20px 20px;
   border-top: 1px solid rgba(49, 47, 47, 1);
   border-bottom: 1px solid rgba(49, 47, 47, 1);
@@ -53,7 +94,16 @@
 
 }
 
-.s-benefit {
+.s-vision {
+  padding: 0 0 110px 0;
+
+  & .heading {
+    margin-bottom: 70px;
+    max-width: 70%;
+  }
+}
+
+.s-advantages {
   padding: 98px 0 93px 0;
   background: rgba(28, 28, 28, 1);
   color: #fff;
@@ -62,12 +112,7 @@
   }
 
   & .heading {
-    max-width: 70%;
-  }
 
-  &.style-2 {
-    padding: 170px 0 110px 0;
-    border-top: 1px solid  #2D2D2D;
   }
 }
 
@@ -75,6 +120,7 @@
 .s-about {
   padding: 120px 0 0 0;
   background: #DFD8CF;
+  color: #000;
   @media (max-width: $breakpoint-md) {
     padding: 60px 0 70px 0;
     background: rgba(45, 45, 45, 0.2);

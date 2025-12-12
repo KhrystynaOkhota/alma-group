@@ -8,6 +8,9 @@
 
   & .img {
     opacity: .5;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 
     &__wrap {
       background: rgba(0, 0, 0, 0.5);
@@ -15,6 +18,7 @@
       top: 0;
       left: 0;
       height: 100%;
+      width: 100%;
 
       &:after {
         content: '';
@@ -38,7 +42,21 @@
     margin-bottom: 2.6875rem;
   }
 
-  & .btn__wrap {
+  & .btn {
+    &-transparent {
+      border-color: rgba(255, 255, 255, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &__wrap {
+      gap: 40px;
+      display: flex;
+      @media (max-width: $breakpoint-lg) {
+        gap: 30px;
+        display: grid;
+        width: 350px;
+      }
+    }
   }
 
   & .social {
@@ -48,17 +66,31 @@
 
 .s-video {
   padding-bottom: 170px;
+  @media (max-width: $breakpoint-md) {
+    padding-bottom: 70px;
+  }
 
   & .heading {
     padding: 60px 52px 20px 52px;
     background: #1C1C1C;
     color: $white-color;
-    font-size: 45px;
+
+    @include fontSize(22, 45);
     position: absolute;
     bottom: -40px;
     left: 0;
     z-index: 4;
     max-width: 62.5%;
+    @media (max-width: $breakpoint-md) {
+      padding: 20px 10px 30px 10px;
+      bottom: 0;
+      max-width: 80%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      left: -10px;
+      width: calc(100% + 20px);
+      max-width: max-content;
+    }
   }
 
   .video {
@@ -173,19 +205,36 @@
 .s-partners {
   padding-bottom: 130px;
 
-  & .swiper-container {
-    margin-top: 60px;
+  & .swiper {
+    &-container {
+      margin-top: 50px;
+      @media (max-width: $breakpoint-md) {
+        margin-top: 40px;
+      }
+    }
+
+    &-button {
+      &__wrap {
+        margin-top: 30px;
+        @media (max-width: $breakpoint-md) {
+          margin-top: 40px;
+        }
+      }
+    }
   }
 
   & .partner {
     &__img {
-      width: 80%;
-      height: 80%;
+      width: 70%;
+      height: 70%;
       object-fit: contain;
 
       &-wrap {
         height: 205px;
         border: 1px solid rgba(180, 173, 164, 0.5);
+        @media (max-width: $breakpoint-md) {
+          height: 105px;
+        }
       }
     }
   }
@@ -193,6 +242,27 @@
 
 .s-more-detail {
   padding: 123px 0 150px 0;
+  @media (min-width: $breakpoint-md) {
+    padding: 70px 0;
+  }
+
+  &__inner {
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: rgba(45, 45, 45, 1);
+      position: absolute;
+      bottom: -150px;
+      left: 0;
+      @media (min-width: $breakpoint-md) {
+        bottom: -70px;
+      }
+
+    }
+  }
 
   & .heading {
     margin-bottom: 40px;
@@ -203,14 +273,22 @@
   }
 
   & .form-control {
-    @media (min-width: $breakpoint-md) {
-      margin-bottom: 0 !important;
+    &__btn {
+      width: 100%;
+      min-width: auto;
     }
 
     &__wrap {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      @media (max-width: $breakpoint-xl) {
+        gap: 20px;
+      }
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
     }
   }
 }

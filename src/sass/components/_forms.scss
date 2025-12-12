@@ -38,7 +38,7 @@ input, button {
   &-control {
     position: relative;
 
-    &:not(&.no-margin){
+    &:not(&.no-margin) {
       margin-bottom: 30px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 20px;
@@ -55,12 +55,11 @@ input, button {
       cursor: pointer;
       display: block;
       width: 100%;
-      font-size: 16px;
-
-      line-height: 1;
-      font-family: 'OpenSans', sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
+      font-family: 'AvenirNextCyr', sans-serif;
       font-weight: 400;
-      color: rgba(151, 151, 151, 1);
+      color: #DFD8CF;
 
       resize: none;
       padding: 18px 20px 17px 20px;
@@ -80,33 +79,33 @@ input, button {
 }
 
 ::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 1;
-  font-family: 'OpenSans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'AvenirNextCyr', sans-serif;
   font-weight: 400;
-  color: rgba(151, 151, 151, 1);
+  color:#DFD8CF;
 
   opacity: 1;
   transition: opacity 0.5s;
 }
 
 ::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1;
-  font-family: 'OpenSans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'AvenirNextCyr', sans-serif;
   font-weight: 400;
-  color: rgba(151, 151, 151, 1);
+  color:#DFD8CF;
 
   opacity: 1;
   transition: opacity 0.5s;
 }
 
 :-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1;
-  font-family: 'OpenSans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'AvenirNextCyr', sans-serif;
   font-weight: 400;
-  color: rgba(151, 151, 151, 1);
+  color:#DFD8CF;
 
   opacity: 1;
   transition: opacity 0.5s;

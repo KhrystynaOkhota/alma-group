@@ -1,6 +1,108 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+
+.s-blog {
+  padding: 100px 0 94px 0;
+  background: #E0D9D0;
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 0 58px 0;
+  }
+
+
+  & .news {
+
+    &__item {
+      position: relative;
+
+      &:after {
+        @media (max-width: $breakpoint-lg) {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: rgba(227, 227, 227, 1);
+          position: absolute;
+          bottom: -18px;
+        }
+      }
+
+      &:nth-child(3n + 1)::after {
+        content: "";
+        position: absolute;
+        bottom: -47px; /* щоб лінія була між рядами */
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        grid-column: 1 / -1; /* тягнемо на всю ширину */
+      }
+    }
+
+    &__img {
+      aspect-ratio: 1.29;
+
+      object-fit: cover;
+
+      &-wrap {
+        margin-bottom: 14px;
+      }
+    }
+
+    &__date {
+      padding: 6px 10px;
+      background: #E0D9D0;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &, & span {
+        color: #2D2D2D;
+      }
+
+      & span {
+        display: block;
+        font-size: 30px;
+      }
+    }
+
+    &__title, &__description {
+      color: #000;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+  &__wrap {
+    gap: 94px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    padding-bottom: 44px;
+
+
+    @media (max-width: $breakpoint-xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: $breakpoint-lg) {
+      gap: 30px 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding-bottom: 48px;
+      gap: 38px 15px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
 .s-events {
   .event {
     position: relative;
@@ -49,12 +151,13 @@
     }
 
     &__img {
-      height:100%;
-      width:100%;
+      height: 100%;
+      width: 100%;
       object-fit: cover;
+
       &-wrap {
         height: 100%;
-        width:100%;
+        width: 100%;
 
       }
     }
@@ -102,7 +205,6 @@
   }
 
 }
-
 
 .s-recommended-news {
   padding: 92px 0;
@@ -156,286 +258,39 @@
   }
 }
 
-.s-blog {
-  padding: 44px 0 150px 0;
-  @media (max-width: $breakpoint-md) {
-    padding: 25px 0 100px 0;
-  }
-
-
-  & .event {
-    &-filter {
-      & .menu {
-        display: flex;
-        justify-content: right;
-        gap: 150px;
-        @media (max-width: $breakpoint-xl) {
-          gap: 100px;
-        }
-        @media (max-width: $breakpoint-lg) {
-          gap: 42px;
-          justify-content: left;
-          margin-top: 14px;
-          margin-bottom: 11px;
-          align-items: center;
-        }
-
-        &-item {
-          flex: 0 0 auto;
-
-          position: relative;
-          @media (min-width: $breakpoint-sm) {
-            white-space: nowrap;
-          }
-          @media (max-width: 520px) {
-            max-width: 75px;
-            text-align: center
-          }
-
-          & a {
-            color: rgba(61, 63, 61, 1);
-            font-size: 20px;
-            @media (max-width: $breakpoint-lg) {
-              display: inline-block;
-
-              font-size: 15px;
-            }
-          }
-
-
-          &.selected {
-            color: rgba(239, 243, 241, 1);
-          }
-
-          &:not(&:last-child) {
-            &:after {
-              content: '';
-              width: 10px;
-              height: 10px;
-              border-radius: 100%;
-              background: rgba(204, 195, 189, 1);
-              position: absolute;
-              right: -70px;
-              top: 50%;
-              transform: translateY(-50%);
-              @media (max-width: $breakpoint-xl) {
-                right: -40px;
-              }
-              @media (max-width: $breakpoint-lg) {
-                width: 8px;
-                height: 8px;
-                right: -24px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &__item {
-      position: relative;
-
-      &:after {
-        @media (max-width: $breakpoint-lg) {
-          content: '';
-          width: 100%;
-          height: 1px;
-          background: rgba(227, 227, 227, 1);
-          position: absolute;
-          bottom: -18px;
-        }
-      }
-    }
-  }
-
-  &__wrap {
-    gap: 44px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
-    padding-bottom: 55px;
-
-
-    @media (max-width: $breakpoint-xl) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media (max-width: $breakpoint-md) {
-      gap: 30px 15px;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: $breakpoint-sm) {
-      padding-bottom: 48px;
-      gap: 38px 15px;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-}
 
 .s-post {
-  padding: 0 0 100px 0;
+  padding: 70px 0 75px 0;
+  margin-bottom: 150px;
+  position: relative;
 
-  &__bottom {
-    padding-top: 50px;
-    @media (min-width: $breakpoint-md) {
-      flex-direction: row-reverse;
+  &:after {
+    content: '';
+    background: #E0D9D0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @media (min-width: 1500px) {
+      transform: translateX(-50%);
+      width: calc(100% - 200px);
+      left: 50%;
     }
-    @media (max-width: $breakpoint-md) {
-      padding-top: 30px;
-    }
+
   }
 
+  & > .container {
+    & > div {
+      &:not(&:last-child) {
+        margin-bottom: 55px;
+      }
+    }
+  }
 
   & .block-text-img {
-    margin-bottom: 44px;
 
-    & .img {
-      position: absolute;
-
-      &__wrap {
-        padding-bottom: 107%;
-        @media (max-width: $breakpoint-md) {
-          padding-bottom: 100%;
-          margin-top: 19px;
-        }
-      }
-    }
-  }
-
-
-  & .date {
-    &__title, &__value {
-      @include fontSize(16, 20);
-    }
-
-    &__title {
-      color: rgba(61, 63, 61, 1);
-    }
-
-    &__value {
-      color: rgba(121, 121, 121, 1);
-    }
-  }
-
-  & .share {
-    @media (max-width: $breakpoint-md) {
-      margin-bottom: 30px;
-    }
-
-    &__title {
-      color: rgba(61, 63, 61, 1);
-      @include fontSize(16, 20);
-      margin-right: 20px;
-      @media (max-width: $breakpoint-md) {
-        margin-right: 10px;
-
-      }
-
-    }
-
-    & .social {
-      &__item {
-        @include transition(.5);
-
-        width: 40px;
-        height: 40px;
-        color: $white-color;
-        @media (max-width: $breakpoint-md) {
-          width: 30px;
-          height: 30px;
-          & i {
-            font-size: 15px;
-          }
-        }
-
-        &:hover {
-          background: #0B84EE;
-
-          & i {
-            color: $white-color;
-          }
-        }
-
-        &.facebook {
-          background: rgba(11, 132, 238, 1);
-        }
-
-        &.telegram {
-          background: rgba(39, 166, 229, 1);
-        }
-
-        &.viber {
-          background: rgba(124, 80, 154, 1);
-        }
-
-        &:not(&:last-child) {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-
-  & .line {
-    margin-top: 21px;
-    background: rgba(0, 0, 0, 0.1);
-    height: 1px;
-    width: 100%;
   }
 }
 
-.s-post-content {
-  padding: 14px 0 100px 0;
-  @media (max-width: $breakpoint-md) {
-    padding-bottom: 50px;
-  }
 
-  .video-full {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 54%;
-    margin-bottom: 40px;
-    @media (max-width: $breakpoint-lg) {
-      margin-bottom: 22px;
-    }
-
-    &::before {
-      content: "";
-      pointer-events: none;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, .2);
-    }
-
-    & video {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      content-visibility: auto;
-    }
-
-    & .btn-play {
-      position: absolute;
-      bottom: 54px;
-      right: 54px;
-      width: 43px;
-      height: 47px;
-      @media (max-width: $breakpoint-md) {
-        width: 27px;
-        height: 30px;
-        bottom: 20px;
-        right: 20px;
-      }
-
-      &.hide {
-        opacity: 0;
-      }
-    }
-  }
-}

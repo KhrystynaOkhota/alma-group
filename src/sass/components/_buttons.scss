@@ -13,11 +13,15 @@
   border: 1px solid transparent;
   text-align: center;
   display: inline-block;
-  font-weight: 400;
+
   border-radius: 10px;
   @include transition(.3);
-  padding: 20px 5px;
+
   min-width: 304px;
+
+  &:not(&.btn-load-more) {
+    padding: 20px 5px;
+  }
 
   &:hover {
     & .btn__icon {
@@ -73,6 +77,12 @@
       border-color: $white-color;
       color: $white-color;
     }
+  }
+
+  &-load-more {
+    color: #B4ADA4;
+
+    margin-top: 34px;
   }
 }
 

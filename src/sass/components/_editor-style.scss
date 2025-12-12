@@ -4,7 +4,7 @@
 
 .editor-style, .cms-content {
   font-family: 'OpenSans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   color: $primary-color;
 
@@ -19,8 +19,8 @@
   }
 
   & p {
-    @include fontSize(14, 17);
-    line-height: 1.58;
+    @include fontSize(16, 17);
+    line-height: 1.5;
     margin-bottom: 20px;
 
     & + ul, & + ol {
@@ -161,7 +161,7 @@
 
   & ul {
     list-style: disc;
-    padding-left: 45px;
+    padding-left: 23px;
   }
 
   & ol {

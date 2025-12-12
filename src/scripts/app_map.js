@@ -72,7 +72,7 @@ jQuery(function ($) {
         var myMap = new google.maps.Map(element, options);
         var markers = [{
             coordinates: {lat: 50.47253296158417, lng: 30.443476447314264},
-            image: "assets/img/placeholder.png",
+            image: "assets/img/pin.png",
             info: "<div class='map-info'><h4>test</h4><div>test</div><a href='tel:354678'>346577ijhgfv</a></div>"
         },];
 

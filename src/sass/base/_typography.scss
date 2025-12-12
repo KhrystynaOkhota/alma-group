@@ -85,7 +85,7 @@
 }
 
 .h1 {
-  @include fontSize(40, 70);
+  @include fontSize(40, 80);
 }
 
 .h2 {
@@ -111,4 +111,40 @@
 
 .mb-70 {
   margin-bottom: 70px;
+}
+.icon-pin:before {
+  content: "\e908";
+}
+
+.icon-ar-left:before {
+  content: "\e900";
+
+}
+.icon-ar-right:before {
+  content: "\e901";
+
+}
+.icon-close:before {
+  content: "\e902";
+
+}
+.icon-facebook:before {
+  content: "\e903";
+
+}
+.icon-instagram:before {
+  content: "\e904";
+
+}
+.icon-telegram:before {
+  content: "\e905";
+
+}
+.icon-viber:before {
+  content: "\e906";
+
+}
+.icon-whatsapp:before {
+  content: "\e907";
+
 }
