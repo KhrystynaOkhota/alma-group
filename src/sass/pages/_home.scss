@@ -36,10 +36,16 @@
     margin-bottom: 1.25rem;
     font-weight: 900;
     @include fontSize(40, 80);
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 28px;
+    }
   }
 
   & .description {
     margin-bottom: 2.6875rem;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 35px;
+    }
   }
 
   & .btn {
@@ -60,6 +66,25 @@
   }
 
   & .social {
+    gap: 70px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 1516px) {
+      position: absolute;
+      right: 100px;
+      margin-top: 92px;
+    }
+    @media (max-width: 1516px) {
+      margin-top: 80px;
+
+    }
+
+    &-item {
+      & i {
+        font-size: 30px;
+      }
+    }
 
   }
 }

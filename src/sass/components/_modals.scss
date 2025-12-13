@@ -73,21 +73,30 @@
       position: absolute;
       width: 24px;
       height: 24px;
-      top: 10px;
-      right: 10px;
+      top: 30px;
+      right: 30px;
       cursor: pointer;
       background: transparent;
+      @media (max-width: $breakpoint-md) {
+        font-size: 24px;
+        top: -54px;
+        right: 15px;
+      }
 
       & i {
-        font-size: 14px;
-        font-weight: 700;
-        color: rgba(15, 15, 15, 1);
+        font-size: 18px;
+        font-weight: normal;
+        color: rgba(224, 217, 208, 1);
         @include transition(.4);
+        @media (max-width: $breakpoint-md) {
+          font-size: 24px;
+
+        }
       }
 
       &:hover {
         & i {
-          color: $accent-color;
+          color: $white-color;
         }
       }
     }
@@ -170,14 +179,6 @@
       height: 10000px;
     }
 
-    /*&:after {
-      display: inline-block;
-      vertical-align: middle;
-      height: 100%;
-      content: "";
-    }*/
-
-
     & .btn-primary {
       @media (max-width: $breakpoint-md) {
         display: block;
@@ -189,79 +190,51 @@
     }
 
 
-    &[data-rel="no-size"] {
+    &[data-rel="inspection"] {
       & .popup {
         &-container {
-          padding: 70px;
-          max-width: 785px;
+          padding: 91px 101px 156px 91px;
+          max-width: 830px;
+          background: rgba(44, 56, 55, 1);
           @media (max-width: $breakpoint-md) {
-            padding: 40px 30px;
+            padding: 22px 10px 54px 10px;
+
           }
         }
 
         &-info {
           & .heading {
-            margin-bottom: 24px;
-            font-size: 17px;
+            margin-bottom: 40px;
+            @include fontSize(30, 60);
+            @media (max-width: $breakpoint-md) {
+              margin-bottom: 25px;
+            }
           }
         }
       }
     }
 
-    &[data-rel="thanks-subscribe"] {
-      & .popup {
-        &-container {
-          padding: 70px 88px;
-          max-width: 628px;
-          @media (max-width: $breakpoint-md) {
-            padding: 47px 28px;
-          }
-        }
-
-        &-info {
-          & .heading {
-            font-size: 25px;
-            line-height: 1.3;
-          }
-        }
-      }
-    }
-
-    &[data-rel="11"] {
-      & .popup {
-        &-container {
-
-        }
-
-        &-info {
-          & .heading {
-            margin-bottom: 24px;
-            font-size: 30px;
-          }
-        }
-      }
-    }
 
     & .form-control {
-      margin-bottom: 20px;
+      &:not(&.no-margin) {
+        margin-bottom: 20px;
+
+      }
 
       &__input {
         padding: 17px 20px 16px 20px;
-        border: 1px solid rgba(204, 195, 189, 0.5);
+
       }
     }
 
     & .btn-primary {
-      margin: 30px auto 0 auto;
+      margin: 0 auto;
 
       display: block;
       width: 100%;
-      max-width: 400px;
+      max-width: 304px;
     }
 
-    .product-horiz {
-      margin-bottom: 40px;
-    }
   }
 }
 

@@ -8,6 +8,7 @@
 @import "base/_base";
 @import "base/_animations";
 @import "layout/_header";
+//@import "layout/_headerNew";
 @import "layout/_footer";
 @import "layout/_grid";
 @import "components/_buttons";
@@ -25,11 +26,10 @@
 @import "pages/_about";
 @import "pages/_contacts";
 @import "pages/_blog";
-@import "pages/_product";
-@import "pages/_cart";
+//@import "pages/_product";
+
 @import "pages/_catalog";
-@import "pages/_collection";
-@import "pages/_checkout";
+
 @import "pages/_other";
 
 @import "pages/_project";
