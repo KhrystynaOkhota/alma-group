@@ -195,6 +195,9 @@
 
 .s-cta {
   padding: 10rem 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 60px 0 0 0;
+  }
 
   & .heading {
     margin-bottom: 40px;
@@ -218,5 +221,11 @@
 
   & .social {
     margin-top: 61px;
+  }
+
+  &__inner {
+    @media (max-width: $breakpoint-md) {
+      margin: 30px 0 0 0;
+    }
   }
 }

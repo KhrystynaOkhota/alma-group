@@ -6,6 +6,11 @@
   &__list {
     display: grid;
     gap: 90px;
+    @media (min-width: $breakpoint-md) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
     @media (max-width: $breakpoint-md) {
       gap: 30px;
     }

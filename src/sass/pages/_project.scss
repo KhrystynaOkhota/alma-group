@@ -5,12 +5,24 @@
   &-home {
     padding: 130px 0 150px 0;
     background: #DFD8CF;
+    @media (max-width: $breakpoint-md) {
+      padding: 60px 0 0 0;
+    }
+
+    & .heading {
+      margin-bottom: 30px;
+      color: rgba(0, 0, 0, 1);
+    }
 
     & .project {
       &__img {
         aspect-ratio: 1 / 1;
         opacity: 0.8;
+        object-fit: cover;
 
+        @media (max-width: $breakpoint-md) {
+          aspect-ratio: 1 / 1.5;
+        }
         &-wrap {
           background: rgba(0, 0, 0, 1);
         }
@@ -28,11 +40,21 @@
         color: rgba(255, 255, 255, 1);
         font-size: 18px;
         line-height: 27px;
-
+        @media (max-width: $breakpoint-md) {
+          padding: 15px;
+          bottom: 120px;
+        }
       }
     }
 
     & .swiper {
+
+      &-container {
+        margin-top: 40px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+      }
+
       &-controls {
         position: absolute;
         bottom: 40px;
@@ -42,7 +64,8 @@
         justify-content: start;
         display: grid;
       }
-     &-pagination-bullet {
+
+      &-pagination-bullet {
 
       }
     }

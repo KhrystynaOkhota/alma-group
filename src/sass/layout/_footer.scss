@@ -11,6 +11,11 @@
 
   &__bg {
     opacity: .4;
+    object-fit: cover;
+
+    @media (max-width: $breakpoint-md) {
+      height: 100%;
+    }
 
     &-wrap {
       position: absolute;
@@ -19,6 +24,10 @@
       width: 100%;
       z-index: -1;
       // background: linear-gradient(0deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%);
+      @media (max-width: $breakpoint-md) {
+        min-height: 695px;
+        height: 100%;
+      }
 
       &:after {
         content: '';

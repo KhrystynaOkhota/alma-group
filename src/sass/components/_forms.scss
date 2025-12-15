@@ -40,7 +40,7 @@ input, button {
 
     &:not(&.no-margin) {
       margin-bottom: 30px;
-      @media (max-width: $breakpoint-md) {
+      @media (max-width: $breakpoint-lg) {
         margin-bottom: 20px;
       }
     }

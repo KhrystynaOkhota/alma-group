@@ -336,29 +336,39 @@ function tabify(tab) {
 
 tabs.forEach(tabify);
 
-// =============================
-// OPEN SUBMENU
-// =============================
 
-jQuery(document).on("click", ".menu-item-has-children > a", function (e) {
-    e.preventDefault();
-    jQuery(this).closest(".menu-item").find(".sub-menu").first().slideToggle(300);
-});
+//*=============
+//*  OTHER JS  =
+//*=============
+// Seo block with smooth animation
+document.querySelectorAll('.info-block').forEach(function (infoBlock) {
+    const content = infoBlock.querySelector('.info-block__content');
+    const text = content ? content.querySelector('.info-block__text') : null;
+    const button = infoBlock.querySelector('.btn-more');
 
-// =============================
-// PRICE
-// =============================
+    if (!content || !text || !button) return;
 
+    const fullHeight = text.scrollHeight;
+    const minHeight = parseInt(window.getComputedStyle(content).minHeight) || 0;
 
-if (jQuery('#slider').length) {
-    jQuery("#slider").slider({
-        range: true,
-        min: 0,
-        max: 7000,
-        values: [8, 6666],
-        slide: function (event, ui) {
-            jQuery(".from").val(ui.values[0]);
-            jQuery(".to").val(ui.values[1]);
+    if (fullHeight <= minHeight) {
+        button.style.display = 'none';
+        return;
+    }
+
+    button.addEventListener('click', function () {
+        const isActive = this.classList.toggle('is-active');
+        const targetHeight = isActive ? fullHeight : minHeight;
+
+        // Smooth animation using CSS transitions
+        content.style.transition = 'height .5s ease';
+        content.style.height = targetHeight + 'px';
+
+        // Set height to auto after animation completes (if expanded)
+        if (isActive) {
+            setTimeout(() => {
+                content.style.height = 'auto';
+            }, 600);
         }
     });
-};
+});
