@@ -19,14 +19,15 @@
 
 
 <header class="header js-header bg"><!-- на свіх сторінках, крім головної, в header додається клас bg-->
-    <div class=" container-fluid p-0">
+    <div class=" container-fluid">
 
-        <div class="d-flex d-md-none align-middle align-justify">
+        <div class="d-flex d-lg-none align-middle align-justify overlap">
             <a href="index.html" class="logo__wrap">
                 <img src="assets/img/logo.svg" alt="Alma group" class="logo">
             </a>
 
             <div class="burger__wrap h-burger d-block d-lg-none">
+                <div class="burger__text" data-toggle-open="Меню" data-toggle-close="Закрити"></div>
                 <div class="burger">
                     <span></span>
                     <span></span>
@@ -38,7 +39,8 @@
         <div class="header__inner ">
             <div class="header__main d-flex align-justify align-middle">
 
-                <a href="index.html" class="logo__wrap">
+                <a href="index.html" class="logo__wrap d-none d-lg-block">
+
                     <img src="assets/img/logo.svg" alt="Alma group" class="logo">
                 </a>
 
@@ -312,11 +314,20 @@
 
     <section class="s-projects-home">
         <div class="container">
-
+            <div class="rowv m-row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column d-flex align-justify align-middle">
+                    <h3 class="heading text-extrabold h1 heading-font text-uppercase ">Alma
+                        Residence</h3>
+                    <a href="about.html" class="btn btn-primary d-none d-md-block">Дізнатись більш</a>
+                </div>
+            </div>
             <div class="row m-row tab align-middle">
                 <div class="col-xl-6 col-lg-6 col-md-16 col-sm-16 col-xs-16 column ">
-                    <h3 class="heading text-extrabold h1 heading-font text-uppercase d-block d-md-none">Alma
-                        Residence</h3>
+                    <div class="tabs__scale">
+                        <span class="tabs__current">01</span>
+                        <span class="tabs__line"></span>
+                        <span class="tabs__total">04</span>
+                    </div>
                     <div class="tab__list ">
                         <div class="tab__item text-bold ">01.Про проєкт</div>
                         <div class="tab__item text-bold ">02. Архітектура</div>
@@ -1246,25 +1257,27 @@
             </div>
             <div class="row m-row s-cta__row">
                 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-16 col-xs-16 column">
-                    <ul class="contact --phone">
-                        <li class="contact-item">
-                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
+
+
+                    <ul class="contacts ">
+                        <li class="contacts__item contacts__item--phone">
+                            <a href="tel:0637818787">+38 (068) 000-55-66</a>
                         </li>
-                        <li class="contact-item">
-                            <a href="tel:0637818787" class="contact__text">+38 (068) 000-55-66</a>
+                        <li class="contacts__item contacts__item--phone">
+                            <a href="tel:0637818787" class="">+38 (068) 000-55-66</a>
                         </li>
                     </ul>
-                    <ul class="contact">
-                        <li class="contact-item">
+                    <ul class="contacts">
+                        <li class="contacts__item">
                             <a href="mailto:info@quoroom.group"
-                               class="contact__text">info@quoroom.group</a>
+                               class="">info@quoroom.group</a>
                         </li>
-                        <li class="contact-item">
+                        <li class="contacts__item">
                             Пн-Пт з 9:00 до 19:00
                         </li>
-                        <li class="contact-item">
+                        <li class="contacts__item">
                             <a href=""
-                               class="contact__text">м. Львів, вул. Щирецька 36, Автосалон "Рік Авто"</a>
+                               class="">м. Львів, вул. Щирецька 36, Автосалон "Рік Авто"</a>
                         </li>
                     </ul>
                 </div>
