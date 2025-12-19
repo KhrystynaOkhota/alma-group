@@ -234,6 +234,12 @@ jQuery(document).on('click', '.btn-play', function () {
         videoItem.play();
         jQuery(this).closest('.video-full').find('video').attr('controls', '');
         jQuery(this).closest('.btn-play').addClass('hide');
+
+        jQuery(this).parents(".s-video").find(".heading").css({
+            "display": "none"
+        });
+
+
     } else {
         videoItem.pause();
         jQuery(this).closest('.video-full').find('video').removeAttr('controls');
@@ -246,6 +252,10 @@ jQuery('.preload__btn').on('click', function () {
         'z-index': -1,
         'opacity': 0
     });
+    jQuery(this).parents(".s-video").find(".heading").css({
+        "display": "none"
+    });
+
     jQuery(this).parents(".preload-entry").find("video").css({
         "display": "block"
     });

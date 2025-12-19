@@ -85,7 +85,8 @@
 }
 
 .h1 {
-  @include fontSize(40, 80);
+ /* @include fontSize(40, 80);*/
+  font-size: clamp(40px, 5vw, 80px);
 }
 
 .h2 {
