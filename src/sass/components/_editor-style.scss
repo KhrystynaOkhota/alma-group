@@ -2,11 +2,11 @@
 @import "../abstracts/variables";
 
 
-.editor-style, .cms-content {
-  font-family: 'OpenSans', sans-serif;
-  font-weight: 300;
+.cms-content {
+  font-family: 'AvenirNextCyr', sans-serif;
+  font-weight: 400;
   line-height: normal;
-  color: $primary-color;
+  color: #fff;
 
   & b, & strong {
     font-weight: bold;
@@ -19,8 +19,8 @@
   }
 
   & p {
-    @include fontSize(16, 17);
-    line-height: 1.5;
+    font-size: fluid(18, 20);;
+    line-height: 1.38;
     margin-bottom: 20px;
 
     & + ul, & + ol {
@@ -130,8 +130,8 @@
     list-style-type: none;
 
     & li {
-      @include fontSize(14, 17);
-      line-height: normal;
+      font-size: fluid(18, 20);;
+      line-height: 1.38;
 
       position: relative;
 

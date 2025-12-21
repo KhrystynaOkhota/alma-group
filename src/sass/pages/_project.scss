@@ -151,7 +151,6 @@
   }
 }
 
-
 .cottages {
   & .project {
     &__status {
@@ -218,6 +217,142 @@
   }
 }
 
+.s-stats {
+  padding-bottom: fluid(60, 140);
+
+  & .description {
+    margin-bottom: 60px;
+  }
+
+  & .stats {
+    padding: 20px;
+    border: 1px solid rgba(58, 58, 58, 1);
+
+    &__value {
+      font-size: fluid(30, 50);
+      margin-bottom: 38px;
+
+      &:after {
+        content: '';
+        width: 155px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        bottom: -16px;
+        left: -20px;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+.s-offers {
+  padding-bottom: fluid(60, 150);
+
+  & .heading {
+    margin-bottom: 51px;
+  }
+
+  & .offer {
+    padding: 45px 0;
+    position: relative;
+
+    &:nth-child(3n + 1) {
+      @media (min-width: $breakpoint-md) {
+        &:before {
+          content: '';
+          width: 100vw;
+          height: 1px;
+          background: rgba(224, 217, 208, 0.2);
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+        }
+      }
+    }
+
+    &:nth-child( odd ) {
+      @media (max-width: $breakpoint-md) {
+        &:before {
+          content: '';
+          width: 100vw;
+          height: 1px;
+          background: rgba(224, 217, 208, 0.2);
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+        }
+        &:after {
+          content: '';
+          width: 1px;
+          height: 100%;
+          background: rgba(224, 217, 208, 0.2);
+          position: absolute;
+          top: 0;
+          right: -10px;
+        }
+      }
+    }
+
+    &:not(:nth-child(3n)) {
+      @media (min-width: $breakpoint-md) {
+        &:after {
+          content: '';
+          width: 1px;
+          height: 100%;
+          background: rgba(224, 217, 208, 0.2);
+          position: absolute;
+          top: 0;
+          right: -15px;
+        }
+      }
+    }
+
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px 30px;
+      overflow: hidden;
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 20px;
+      }
+    }
+
+    &__img {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 30px auto;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+
+.s-audience {
+  padding-top: fluid(60, 150);
+
+  & .heading {
+    margin-bottom: 35px;
+  }
+
+  & .description {
+    margin-bottom: 66px;
+  }
+
+  & .img {
+    &__wrap {
+      aspect-ratio: 3 / 1;
+    }
+  }
+}
+
 .s-cottages-recommended {
   padding: 130px 0 150px 0;
   background: #E0D9D0;
@@ -255,12 +390,15 @@
 
   & .card {
     &__img {
-
-      aspect-ratio: 5 / 3;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
       @media (max-width: $breakpoint-md) {
         aspect-ratio: 67 / 83;
       }
+    }
+
+    &__date {
+      margin-bottom: 10px;
     }
 
     &__info {

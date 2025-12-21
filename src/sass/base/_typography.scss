@@ -66,8 +66,8 @@
   }
 
   &-s {
-    @include fontSize(14, 17);
-    line-height: 1.58;
+    font-size: fluid(18, 20);;
+    line-height: 1.38;
 
   }
 }

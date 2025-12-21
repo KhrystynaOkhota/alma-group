@@ -17,16 +17,16 @@
 </head>
 <body>
 
-
 <header class="header js-header bg"><!-- на свіх сторінках, крім головної, в header додається клас bg-->
-    <div class=" container-fluid p-0">
+    <div class=" container-fluid">
 
-        <div class="d-flex d-md-none align-middle align-justify">
+        <div class="d-flex d-lg-none align-middle align-justify overlap">
             <a href="index.html" class="logo__wrap">
                 <img src="assets/img/logo.svg" alt="Alma group" class="logo">
             </a>
 
             <div class="burger__wrap h-burger d-block d-lg-none">
+                <div class="burger__text" data-toggle-open="Меню" data-toggle-close="Закрити"></div>
                 <div class="burger">
                     <span></span>
                     <span></span>
@@ -38,19 +38,20 @@
         <div class="header__inner ">
             <div class="header__main d-flex align-justify align-middle">
 
-                <a href="index.html" class="logo__wrap">
+                <a href="index.html" class="logo__wrap d-none d-lg-block">
+
                     <img src="assets/img/logo.svg" alt="Alma group" class="logo">
                 </a>
 
                 <ul class="menu">
                     <li class="menu-item menu-item-active">
-                        <a href="">Головна</a>
+                        <a href="index.html">Головна</a>
                     </li>
                     <li class="menu-item ">
-                        <a href=""> Про нас</a>
+                        <a href="about.html"> Про нас</a>
                     </li>
                     <li class="menu-item ">
-                        <a href="">Проєкти</a>
+                        <a href="projects.html">Проєкти</a>
                     </li>
                     <li class="menu-item ">
                         <a href="blog.html">Новини</a>
@@ -98,8 +99,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 col-lg-10 col-md-11 col-sm-16 col-xs-16">
-                    <h1 class="heading overlap">
-                        Ми створюємо простори з душею
+                    <h1 class="heading heading-font h1 text-black text-uppercase overlap">
+                        Простори для життя з душею
                     </h1>
 
                 </div>
@@ -107,51 +108,45 @@
         </div>
     </section>
 
-    <section class="s-benefit section">
+    <section class="s-intro">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
-                    <h1 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
-                        Комфортне житло Alma Group
-                    </h1>
-                    <div class="benefit__wrap">
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Якість</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
+            <div class="row m-row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column d-flex align-justify align-middle">
+                    <div class="description cms-content">
+                        <p><b>Ми розуміємо, що дім</b> — це більше, ніж стіни. Це місце, де народжуються мрії,
+                            з’являються нові
+                            сімейні історії, де кожен день починається із тепла та спокою. Саме тому, ми піклуємося, не
+                            лише
+                            про якість матеріалів і сучасні технології - а й про атмосферу, яку створюють проєкти.</p>
+                        <p>Проєкти, будівельної компанії «Кворум» — це більше, ніж просто квадратні метри. Це про стиль
+                            життя, де краса поєднується з функціональністю.</p>
+                        <p><b>Alma Group: будувати — значить змінювати</b></p>
+                        <p><b>Кожен проєкт</b> — це крок до сучасного Львова, де комфорт і стиль стають нормою, а не
+                            розкішшю.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-row purpose__wrap">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-16 col-xs-16 column">
+                    <div class="purpose">
+                        <div class="purpose__title text-bold">
+                            Ціль компанії.
                         </div>
-
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-2.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Спільнота</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
+                        <div class="purpose__description">
+                            Ми створюємо не просто житло, а простори для життя з душею, де поєднуються комфорт, природа
+                            й спільнота. Alma Group — це про якість, довговічність і атмосферу, яка залишається з вами
+                            на десятиліття.
                         </div>
-
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-3.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Комфорт</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-16 col-xs-16 column">
+                    <div class="purpose">
+                        <div class="purpose__title text-bold">
+                            Ціль компанії.
                         </div>
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-4.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Інфраструктура</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
+                        <div class="purpose__description">
+                            Зробити якісний заміський формат життя доступним для тих, хто цінує баланс: приватність і
+                            безпеку, сучасність і натуральність, спільність і простір для себе.
                         </div>
                     </div>
                 </div>
@@ -159,141 +154,34 @@
         </div>
     </section>
 
-    <section class="s-about section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
-                    <h1 class="heading text-extrabold h1 heading-font">
-                        Про компанію
-                    </h1>
+    <div class="decor-line"></div>
 
-                    <a href="" class="btn btn-primary">Дізнатись більш</a>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
-                    <div class="description">
-                        Вітаємо в котеджному містечку Alma Group
-                        Реалізуючи проєкт, ми постійно питаємо себе, чи можливо зробити ще краще? І тільки відповідаючи,
-                        що вже обрали краще — продовжуємо
-
-                        Наша команда експертів втілює в життя архітектурні рішення будь-якої складності. Використання
-                        надійних технологій та відкритість до інновацій дозволяє нам створювати стійкі та сучасні
-                        будівлі.
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 --relative">
-                    <div class="img__wrap">
-                        <img src="assets/img/about.png" alt="" class="img">
-                    </div>
-                    <div class="accent">
-                        <p>Цікаво, але до ділового центру Львову всього 20 хвилин, та чому тоді котеджне містечко
-                            настільки бажане та популярне? Насправді ми не продаємо коробки будинків і не маємо за мету
-                            продати якнайбільше квадратних метрів. Це було б занадто просто. Мета інша — побудувати
-                            найкраще котеджне містечко в Україні.</p>
-                        <p>Ми з перших днів створюємо унікальне містечко на 25 га, де на території є все для абсолютно
-                            щасливого життя. Кожен см² спроєктовано, навіть якщо це безкраї ландшафтного парку чи то
-                            унікальні дизайнерські дитячі майданчики. Інший всесвіт у передмісті Львові це про Alma
-                            Group. Є лише один кордон, який ми маємо — це вʼїзд на територію.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-more-detail">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 ">
-                    <h3 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
-                        Цікавить детальніше?
-                    </h3>
-                    <div class="description">
-                        Залишайте свої контакти і наш менджер зв'яжеться з Вами найближчим часом.
-                    </div>
-
-                    <form>
-                        <div class="row m-row">
-                            <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column ">
-
-                                <div class="form-control__wrap">
-                                    <div class="form-control">
-                                        <label class="form-control__label">
-                                            <input class="form-control__input " type="text" name="" value=""
-                                                   placeholder="Ім’я" title="">
-                                        </label>
-                                    </div>
-
-
-                                    <div class="form-control">
-                                        <label class="form-control__label">
-                                            <input class="form-control__input " type="tel" name="" value=""
-                                                   placeholder="Телефон" title="">
-                                        </label>
-                                    </div>
-
-                                    <input type="submit" value="Відправити заявку"
-                                           class="btn btn-primary form-control__btn">
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-benefit style-2">
+    <section class="s-advantages">
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
                     <h1 class="heading heading-font h1 text-extrabold text-uppercase mb-70">
                         Ми створюємо не просто житло, а стиль життя.
                     </h1>
-                    <div class="benefit__wrap">
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-1.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Якість</div>
-                            <div class="benefit__text text-light">
+                    <div class="advantage__wrap">
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Якість</div>
+                            <div class="advantage__text text-light">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-2.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Спільнота</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Комфорт</div>
+                            <div class="advantage__text text-light">
+                                — продумані планування і простір для сім’ї.
                             </div>
                         </div>
 
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-3.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Комфорт</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
-                            </div>
-                        </div>
-                        <div class="benefit">
-                            <div class="benefit__icon-wrap d-flex align-middle align-center">
-                                <img src="assets/img/ad-4.svg" alt="" class="benefit__icon">
-                            </div>
-                            <div class="benefit__title text-bold">Інфраструктура</div>
-                            <div class="benefit__text text-light">
-                                — натуральні матеріали, архітектура, яка не старіє.
+                        <div class="advantage --relative">
+                            <div class="advantage__title text-bold">Спільнота</div>
+                            <div class="advantage__text text-light">
+                                — середовище однодумців.
                             </div>
                         </div>
                     </div>
@@ -302,12 +190,12 @@
         </div>
     </section>
 
-    <section class="s-video">
+    <section class="s-video s-media-promo">
         <div class="container">
             <div class="row">
 
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                    <h3 class="heading heading-font text-regular h2 text-uppercase">Ми дбаємо про комфорт на кожному
+                    <h3 class="heading heading-font text-extrabold h2 text-uppercase">Ми дбаємо про комфорт на кожному
                         етапі — від ідеї
                         до новосілля.</h3>
                     <div class="video-full video-block video-with-control video__wrap">
@@ -325,21 +213,110 @@
         </div>
 
     </section>
-філософія
+
+    <section class="s-philosophy">
+        <div class="container">
+            <div class="row m-row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
+                    <h3 class="heading h2 heading-font text-black  text-uppercase">Філософія будівництва. Будуємо не
+                        місце—а мрію!</h3>
+                    <div class="description">
+                        <p><b>Використовуємо новітні технології та натуральні матеріали — камінь, дерево,
+                            скло.</b></p>
+                        <p>Дбаємо про енергоефективність і довговічність кожної деталі, щоб створювати простори, у яких
+                            комфортно жити десятиліттями.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row m-row swiper-entry">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
+                    <div class="swiper-container"
+                         data-options='{"slidesPerView": 1, "spaceBetween": 20}'>
+                        <div class="swiper-wrapper">
+                            <!-- будь-яка кількість -->
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+                                    <img src="assets/img/about.png">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/about.png">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+                                    <img src="assets/img/about.png">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/about.png">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+                                    <img src="assets/img/about.png">
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-grid">
+                                    <img src="assets/img/about.png">
+                                    <img src="assets/img/g-1.png">
+                                    <img src="assets/img/g-2.png">
+                                    <img src="assets/img/g-3.png">
+                                    <img src="assets/img/g-4.png">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button__wrap d-flex align-right">
+                        <div class="swiper-button-prev d-flex align-center align-middle">
+                            <i class="icon-ar-left"></i>
+                        </div>
+                        <div class="swiper-button-next d-flex align-center align-middle">
+                            <i class="icon-ar-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="s-partners swiper-entry">
         <div class="container overlap">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
                     <h3 class="heading h1 heading-font text-black  text-uppercase">Логотипи партнерів</h3>
-
-                    <div class="swiper-button__wrap d-flex align-left">
-                        <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
-                            <i class="icon-ar-left"></i>
-                        </div>
-                        <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
-                            <i class="icon-ar-right"></i>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="row">
@@ -398,24 +375,31 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="swiper-button__wrap d-flex align-right">
+                        <div class="swiper-button-prev d-flex align-center align-middle">
+                            <i class="icon-ar-left"></i>
+                        </div>
+                        <div class="swiper-button-next d-flex align-center align-middle">
+                            <i class="icon-ar-right"></i>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="s-events">
+    <section class="s-events swiper-entry">
         <div class="container">
             <div class="row m-row">
                 <div class="column col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
                     <h3 class="heading h1 heading-font text-black  text-uppercase">Новини</h3>
-                    <a href="blog.html" class="btn btn-primary">Усі новини</a>
+                    <a href="blog.html" class="btn btn-primary d-none d-md-inline-block">Усі новини</a>
                     <div class="swiper-button__wrap d-flex  d-md-none align-left">
-                        <div class="swiper-button-prev d-flex align-left align-middle text-s text-medium">
+                        <div class="swiper-button-prev d-flex align-center align-middle text-s text-medium">
                             <i class="icon-ar-left"></i>
                         </div>
-                        <div class="swiper-button-next d-flex align-right align-middle text-s text-medium">
+                        <div class="swiper-button-next d-flex align-center align-middle text-s text-medium">
                             <i class="icon-ar-right"></i>
                         </div>
                     </div>
@@ -482,6 +466,130 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="swiper-container"
+                         data-options='{"loop":true,"slidesPerView": 1,  "spaceBetween": 15,
+                         "breakpoints": {
+                         "520": {"slidesPerView":1.3},
+                         "767": {"slidesPerView": 2}}}'>
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="event">
+                                    <div class="event__img-wrap">
+                                        <img src="assets/img/about.png" alt=""
+                                             class="event__img">
+                                    </div>
+                                    <div class="event__info">
+                                        <div class="event__date --relative text-light">14 лютого 2025</div>
+
+                                        <div class="event__title  text-regular">
+                                            Дайжест будівництва Грудень 2024
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="btn btn-primary d-block d-md-none">Усі новини</a>
                 </div>
             </div>
         </div>
@@ -489,7 +597,6 @@
 
 
 </main>
-
 
 
 <footer class="footer">
@@ -710,8 +817,6 @@
 <script src="assets/js/jquery.sumoselect.min.js"></script>
 <script src="assets/js/app-swiper.js"></script>
 <script src="assets/js/js_app.min.js"></script>
-
-
 
 
 </body>

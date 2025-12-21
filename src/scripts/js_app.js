@@ -69,7 +69,6 @@ jQuery(function ($) {
     });
 
 
-
     let prevScroll = 0;
     let ticking = false;
 
@@ -110,19 +109,17 @@ jQuery(function ($) {
     };
 
 
-
-
-   /* _functions.scrollCall = function () {
-        winScr = $(window).scrollTop();
-        if (winScr > 10) {
-            jQuery('header').addClass('scrolled');
-        } else {
-            jQuery('header').removeClass('scrolled');
-        }
-    }*/
+    /* _functions.scrollCall = function () {
+         winScr = $(window).scrollTop();
+         if (winScr > 10) {
+             jQuery('header').addClass('scrolled');
+         } else {
+             jQuery('header').removeClass('scrolled');
+         }
+     }*/
     /*_functions.scrollCall();*/
     // Підписка на скрол
-    window.addEventListener('scroll', _functions.scrollCall, { passive: true });
+    window.addEventListener('scroll', _functions.scrollCall, {passive: true});
 
 // Виклик одразу при завантаженні, щоб перевірити положення хедера
     window.addEventListener('load', () => {
@@ -220,7 +217,8 @@ jQuery(document).on('click', '.accordion-title', function () {
 if (jQuery('.select-box').length) {
 
     jQuery('.default').SumoSelect();
-};
+}
+;
 
 
 // =============================
@@ -345,6 +343,38 @@ function tabify(tab) {
 }
 
 tabs.forEach(tabify);
+
+
+// =============================
+// stats
+// =============================
+jQuery(function ($) {
+    const obsCounter = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+                if (!entry.isIntersecting)
+                    return;
+                entry.target.classList.add("|", "animated");
+                $(entry.target).find(".stats__value span").each(function () {
+                    $(this).prop("Counter", 0).animate({
+                        Counter: $(this).text(),
+                    }, {
+                        duration: 1500,
+                        easing: "swing",
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        },
+                    });
+                });
+                observer.unobserve(entry.target);
+            }
+        );
+    });
+
+    document.querySelectorAll(".stats__grid").forEach((block) => {
+        obsCounter.observe(block);
+    });
+
+});
 
 
 //*=============

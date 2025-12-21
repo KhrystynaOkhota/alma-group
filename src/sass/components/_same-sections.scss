@@ -2,7 +2,7 @@
 @import "../abstracts/variables";
 
 .s-banner {
-  padding: 156px 0 60px 0;
+  padding: 165px 0 60px 0;
   overflow: hidden;
   position: relative;
   @media (max-width: $breakpoint-md) {
@@ -16,13 +16,22 @@
     opacity: .5;
 
     &__wrap {
-
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
       background: rgba(0, 0, 0, 1);
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 
@@ -83,33 +92,25 @@
   }
 
 
-  & .kama_breadcrumbs {
-    & a {
+  & .btn {
+    &-transparent {
+      border-color: rgba(255, 255, 255, 1);
       color: rgba(255, 255, 255, 1);
     }
 
-    & .kb_sep {
-      &:has(+ .kb_title) {
-        & i {
-          color: rgba(156, 156, 156, 1);
-        }
-      }
-
-      & i {
-        color: rgba(255, 255, 255, 1);
-      }
-    }
-
-    & .kb_title {
-      color: rgba(217, 217, 217, 1);
-
-    }
-
-    &:after {
-      display: none;
+    &__wrap {
+      margin-top: 50px;
+      gap: 42px;
     }
   }
 
+  &.full-height {
+    height: 100vh;
+
+    & .s-banner__inner {
+      padding-top: 150px;
+    }
+  }
 }
 
 
@@ -270,7 +271,8 @@
       aspect-ratio: 5 / 3;
     }
   }
-  &.reverse{
+
+  &.reverse {
     @media (min-width: $breakpoint-lg) {
       margin-bottom: 24px;
       display: flex;
