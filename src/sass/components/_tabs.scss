@@ -25,10 +25,10 @@
     @include transition(.5);
     @include fontSize(22, 30);
 
-    &:not(&:last-child) {
+
       &:after {
         content: '';
-        width: 100%;
+        width: 0;
         height: 1px;
         background: rgba(0, 0, 0, 0.1);
         position: absolute;
@@ -38,10 +38,13 @@
           bottom: -15px;
         }
       }
-    }
+
 
     &.is--active {
       color: rgba(89, 69, 55, 1);
+      &:after{
+        width: 100%;
+      }
     }
   }
 

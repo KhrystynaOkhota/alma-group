@@ -106,7 +106,7 @@
         color: #C5BEB5;
       }
 
-      &.active {
+      &.is-active {
         & a {
           color: #3A3A3A;
         }
@@ -489,11 +489,12 @@
   }
 
   & .heading {
-    margin-bottom: 18px;
+    margin-bottom: fluid(18, 60);
   }
 
   & .description {
-    margin-bottom: 27px;
+
+    margin-bottom: fluid(27, 66);
   }
 
   & .swiper {
@@ -562,13 +563,66 @@
 
 .s-plan {
   background: #E0D9D0;
-  padding: 80px 0;
+  padding: fluid(60, 80) 0;
 
-  & .tab__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-    gap: 20px;
+  & .heading {
+    color: #000000;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 22px;
+    }
+  }
+
+  & .tab {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+      gap: 20px;
+    }
+
+    &__content {
+      margin-top: fluid(25, 55);
+    }
+
+    &__item {
+      &:after {
+        content: '';
+        display: none;
+      }
+
+      &.is-active {
+        color: #2C3837;
+      }
+    }
+  }
+
+  & .plan-info {
+    &__heading {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: fluid(25, 40);
+      color: #1C1C1C;
+    }
+
+    &__img {
+      aspect-ratio: 3 / 2;
+      object-fit: contain;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 29px;
+      }
+    }
+  }
+
+  & .cms-content {
+    & ul {
+      & li {
+        color: #1C1C1C;
+
+        &::marker {
+          color: #1C1C1C;
+        }
+      }
+    }
   }
 }
 
@@ -581,9 +635,10 @@
 
   & .cms-content {
     color: #E0D9D0;
-    & ul,&  ol{
-      & li{
-        &::marker{
+
+    & ul, & ol {
+      & li {
+        &::marker {
           color: #E0D9D0;
         }
       }
@@ -724,4 +779,7 @@
   }
 
 
+}
+.s-general-plan{
+  padding: 70px 0;
 }

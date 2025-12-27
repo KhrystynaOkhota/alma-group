@@ -89,11 +89,60 @@
   }
 }
 
-.s-video {
-  padding-bottom: 170px;
-  @media (max-width: $breakpoint-md) {
-    padding-bottom: 70px;
+.media {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 66%;
+
+  &::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
   }
+
+  &__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    content-visibility: auto;
+  }
+
+  &__btn {
+
+    position: absolute;
+    top: 156px;
+    right: 25%;
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+
+    & img {
+      width: 30%;
+      height: 30%;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}
+
+.s-media-promo {
+  padding-bottom: fluid(70, 170);
 
   & .heading {
     padding: 60px 52px 20px 52px;
@@ -119,93 +168,17 @@
     }
   }
 
-  .video {
-    &__wrap {
-      position: relative;
+  & .media {
 
-      width: 100vw;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-
-      & .btn-play {
-        width: 190px;
-        height: 190px;
-        border-radius: 100%;
-      }
-    }
-  }
-
-
-  & .video-full {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 66%;
-    @media (max-width: $breakpoint-lg) {
-      padding-bottom: 130%;
-    }
-
-    &::before {
-      content: "";
-      pointer-events: none;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, .2);
-    }
-
-    & video {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      content-visibility: auto;
-    }
-
-    & .btn-play {
-      position: absolute;
-      top: 156px;
-      right: 25%;
-      width: 190px;
-      height: 190px;
-      border-radius: 100%;
-      cursor: pointer;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255, 255, 255, .3);
-      background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
-
-
-      // background: rgba(255, 255, 255, 1);
-      @media (max-width: $breakpoint-md) {
-        width: 81px;
-        height: 81px;
-        top: 86px;
-        right: 20px;
-      }
-
-      &.hide {
-        opacity: 0;
-      }
-
-      & img {
-        width: 35%;
-        height: 35%;
-        object-fit: contain;
-        object-position: center;
-        z-index: 3;
-        position: relative;
-      }
-
-    }
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 }
+
+
 
 .s-partners {
   padding-bottom: 130px;
@@ -275,6 +248,7 @@
 
   & .heading {
     margin-bottom: 40px;
+    font-size: fluid(40, 65);
   }
 
   & .description {

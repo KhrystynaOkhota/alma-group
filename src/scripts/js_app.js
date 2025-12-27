@@ -211,29 +211,18 @@ jQuery(document).on('click', '.accordion-title', function () {
 
 
 // =============================
-// SumoSelect
-// =============================
-
-if (jQuery('.select-box').length) {
-
-    jQuery('.default').SumoSelect();
-}
-;
-
-
-// =============================
 // PLAY AND STOP VIDEO
 // =============================
 
-jQuery(document).on('click', '.btn-play', function () {
-    let videoItem = jQuery(this).closest('.video-with-control').find('video').get(0);
+jQuery(document).on('click', '.media__btn', function () {
+    let videoItem = jQuery(this).closest('.media__entry').find('video').get(0);
 
     if (videoItem.paused) {
         videoItem.play();
-        jQuery(this).closest('.video-full').find('video').attr('controls', '');
-        jQuery(this).closest('.btn-play').addClass('hide');
+        jQuery(this).closest('.media__entry').find('video').attr('controls', '');
+        jQuery(this).closest('.media__btn').addClass('hide');
 
-        jQuery(this).parents(".s-video").find(".heading").css({
+        jQuery(this).parents(".media__entry").find(".heading").css({
             "display": "none"
         });
 
@@ -245,6 +234,7 @@ jQuery(document).on('click', '.btn-play', function () {
     }
 });
 // about page
+/*
 jQuery('.preload__btn').on('click', function () {
     jQuery(this).parents(".preload-entry").find(".preload").css({
         'z-index': -1,
@@ -271,7 +261,7 @@ jQuery('.preload__btn').on('click', function () {
         $(this).parents(".preload-entry").find('.--pause').removeClass("d-none").addClass("d-block");
     }
 });
-
+*/
 // =============================
 // FILTER
 // =============================

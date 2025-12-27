@@ -19,14 +19,15 @@
 
 
 <header class="header js-header bg"><!-- на свіх сторінках, крім головної, в header додається клас bg-->
-    <div class=" container-fluid p-0">
+    <div class=" container-fluid">
 
-        <div class="d-flex d-md-none align-middle align-justify">
+        <div class="d-flex d-lg-none align-middle align-justify overlap">
             <a href="index.html" class="logo__wrap">
                 <img src="assets/img/logo.svg" alt="Alma group" class="logo">
             </a>
 
             <div class="burger__wrap h-burger d-block d-lg-none">
+                <div class="burger__text" data-toggle-open="Меню" data-toggle-close="Закрити"></div>
                 <div class="burger">
                     <span></span>
                     <span></span>
@@ -38,13 +39,14 @@
         <div class="header__inner ">
             <div class="header__main d-flex align-justify align-middle">
 
-                <a href="index.html" class="logo__wrap">
+                <a href="index.html" class="logo__wrap d-none d-lg-block">
+
                     <img src="assets/img/logo.svg" alt="Alma group" class="logo">
                 </a>
 
                 <ul class="menu">
                     <li class="menu-item menu-item-active">
-                        <a href=index.html"">Головна</a>
+                        <a href="index.html">Головна</a>
                     </li>
                     <li class="menu-item ">
                         <a href="about.html"> Про нас</a>
@@ -93,28 +95,27 @@
 <main class="main">
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
-                <div class="kama_breadcrumbs">
+    <section class="s-contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
+                    <div class="kama_breadcrumbs">
                     <span>
                         <a href="">
                             <span>Головна</span>
                         </a>
                     </span>
-                    <span class="kb_sep"><i>/</i></span>
-                    <span class="kb_title">Контакти</span>
+                        <span class="kb_sep"><i>/</i></span>
+                        <span class="kb_title">Контакти</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <section class="s-cta">
         <div class="container overlap">
             <div class="row">
                 <div class="col-xl-11 col-lg-11 col-md-11 col-sm-16 col-xs-16">
-                    <h3 class="heading h1 heading-font text-black text-uppercase">Контакти</h3>
-                    <div class="description"><p><b>Наша команда</b> – це компетентні будівельники, проектанти та
+                    <h3 class="heading h1 heading-font text-black letter-spacing text-uppercase">Контакти</h3>
+                    <div class="description text-s"><p><b>Наша команда</b> – це компетентні будівельники, проектанти та
                         архітектори, які
                         ідуть в ногу з часом, впроваджуючи інноваційні рішення та передові технології.</p>
                         <p>
@@ -126,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="row m-row s-cta__row">
+            <div class="row m-row s-contacts__row">
                 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-16 col-xs-16 column">
 
 
@@ -151,10 +152,37 @@
                                class="">м. Львів, вул. Щирецька 36, Автосалон "Рік Авто"</a>
                         </li>
                     </ul>
+                    <ul class="social d-flex align-middle">
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="social-item ">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-viber"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="d-flex align-center align-middle">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-16 col-xs-16 column ">
-                    <div class="s-cta__inner">
+                    <div class="s-contacts__inner">
                         <form>
                             <div class="row m-row">
                                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column ">
@@ -381,6 +409,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key="
         type="text/javascript"></script>
 <script src="./assets/js/jquery-3.7.0.min.js"></script>
@@ -388,14 +417,7 @@
 <script src="assets/js/js_app.min.js"></script>
 
 
-
-
-
-
 <script src="assets/js/app_map.min.js"></script>
-
-
-
 
 
 </body>

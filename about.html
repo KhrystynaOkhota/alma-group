@@ -190,7 +190,7 @@
         </div>
     </section>
 
-    <section class="s-video s-media-promo">
+    <section class="s-video s-media-promo media__entry">
         <div class="container">
             <div class="row">
 
@@ -198,13 +198,12 @@
                     <h3 class="heading heading-font text-extrabold h2 text-uppercase">Ми дбаємо про комфорт на кожному
                         етапі — від ідеї
                         до новосілля.</h3>
-                    <div class="video-full video-block video-with-control video__wrap">
-                        <div class="video" data-src="assets/img/t.mp4">
-                            <video muted="" playsinline="" loop="" preload=""
-                                   poster="assets/img/video.png"
-                                   src="assets/img/t.mp4"></video>
-                        </div>
-                        <div class=" btn-play d-flex align-middle align-center">
+                    <div class="media">
+                        <video muted="" playsinline="" loop="" preload=""
+                               poster="assets/img/video.png"
+                               src="assets/img/t.mp4" class="media__video"></video>
+
+                        <div class=" media__btn btn-play d-flex align-middle align-center">
                             <img src="assets/img/play.svg" alt="play btn">
                         </div>
                     </div>
@@ -699,122 +698,12 @@
     </div>
 </footer>
 
-<div class="popup-wrapper">
-    <div class="bg-layer"></div>
 
-
-    <div class="popup-content" data-rel="11">
-        <div class="layer-close"></div>
-        <div class="popup-container">
-            <div class="btn-close d-flex align-middle align-center"><i class="icon-close"></i>
-            </div>
-
-            <div class="popup-info">
-                <div class="product-horiz">
-                    <a href="" class="product__img-wrap d-block">
-                        <img src="assets/img/p-1.png" alt="" class="product__img">
-                    </a>
-                    <div class="product-content">
-                        <a href="" class="product__title text-bold">Жіноча вишита блуза Мотив Символіка</a>
-                        <ul class="product__characteristic">
-                            <li><b>Колір:</b> червоний</li>
-                            <li><b>Розмір:</b> XS | UA 42</li>
-                        </ul>
-
-                        <div class="product-controls d-flex align-middle align-justify">
-                            <div class="product__count--wrap">
-                                <div class="select-box">
-                                    <select name="orderby" class="default">
-                                        <option value="1">1</option>
-                                        <option value="2">
-                                            2
-                                        </option>
-                                        <option value="3" selected="selected">
-                                            3
-                                        </option>
-                                        <option value="4">
-                                            4
-                                        </option>
-                                        <option value="5">
-                                            5
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="product__price">
-                                <div class="product__price-current text-bold">5 690 грн.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form>
-                    <div class="row m-row">
-                        <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                            <div class="heading heading-font text-center">Швидка покупка</div>
-                        </div>
-                    </div>
-                    <div class="row m-row">
-                        <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                            <div class="form-control">
-                                <input class="form-control__input" type="text" name="" value=""
-                                       placeholder="Ім’я"
-                                       title="">
-                            </div>
-                            <div class="form-control">
-                                <input class="form-control__input" type="email" name="" value=""
-                                       placeholder="E-mail"
-                                       title="">
-                            </div>
-
-                            <input type="submit" value="Замовити" class="btn btn-primary">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="popup-content" data-rel="no-size">
-        <div class="layer-close"></div>
-        <div class="popup-container">
-            <div class="btn-close d-flex align-middle align-center"><i class="icon-close"></i>
-            </div>
-
-            <div class="popup-info">
-                <h4 class="heading text-center text-bold">Ми надішлемо вам сповіщення, коли розмір 44 з’aявиться.</h4>
-                <form>
-                    <div class="row m-row">
-                        <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
-                            <div class="form-control">
-                                <input class="form-control__input" type="email" name="" value=""
-                                       placeholder="natali.info@gmail.com"
-                                       title="">
-                            </div>
-
-                            <input type="submit" value="Прийняти" class="btn btn-primary">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-content" data-rel="thanks-subscribe">
-        <div class="layer-close"></div>
-        <div class="popup-container">
-            <div class="btn-close d-flex align-middle align-center"><i class="icon-close"></i>
-            </div>
-
-            <div class="popup-info">
-                <h4 class="heading text-center text-light">Ви вдало підписались на цю розсилку!</h4>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <script src="./assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/jquery.sumoselect.min.js"></script>
+
 <script src="assets/js/app-swiper.js"></script>
 <script src="assets/js/js_app.min.js"></script>
 

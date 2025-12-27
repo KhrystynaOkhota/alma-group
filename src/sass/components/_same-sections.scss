@@ -361,3 +361,15 @@
     }
   }
 }
+
+
+.block-video {
+  & .media {
+    &__btn {
+      width: 125px;
+      height: 125px;
+      top: 100px;
+      right: 100px;
+    }
+  }
+}
