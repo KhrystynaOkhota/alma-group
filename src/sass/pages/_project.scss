@@ -232,7 +232,7 @@
       color: #000;
       @include fontSize(20, 23);
       letter-spacing: 0.1em;
-      padding-bottom: 11px;
+      padding-bottom: 5px;
       margin-bottom: 21px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       display: -webkit-box;
@@ -240,10 +240,9 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      min-height: 2.5em;
+
       @media (max-width: $breakpoint-lg) {
-        padding-bottom: 10px;
-        margin-bottom: 11px;
+
       }
     }
 
@@ -282,6 +281,7 @@
 
   & .description {
     margin-bottom: 60px;
+    color: #E0D9D0;
   }
 
   & .stats {
@@ -291,6 +291,10 @@
     &__value {
       font-size: fluid(30, 50);
       margin-bottom: 38px;
+
+      & span:not(.stats__value--number) {
+        font-size: fluid(20, 30);
+      }
 
       &:after {
         content: '';
@@ -307,6 +311,10 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+
+      }
     }
   }
 }
@@ -315,7 +323,9 @@
   padding-bottom: fluid(60, 150);
 
   & .heading {
-    margin-bottom: 51px;
+
+
+    margin-bottom: fluid(30, 50);
   }
 
   & .offer {
@@ -386,8 +396,8 @@
     }
 
     &__img {
-      width: 50px;
-      height: 50px;
+      width: 55px;
+      height: 55px;
       margin: 0 auto 30px auto;
       object-fit: contain;
       object-position: center;
@@ -399,11 +409,13 @@
   padding-top: fluid(60, 150);
 
   & .heading {
-    margin-bottom: 35px;
+
+    margin-bottom: fluid(30, 35);
   }
 
   & .description {
-    margin-bottom: 66px;
+
+    margin-bottom: fluid(22, 66);
   }
 
   & .img {
@@ -418,8 +430,14 @@
 }
 
 .s-cottages-recommended {
-  padding: 130px 0 150px 0;
+  padding: fluid(60, 130) 0 fluid(60, 150) 0;
   background: #E0D9D0;
+
+  &__more {
+    @media (max-width: $breakpoint-md) {
+      margin-top: 50px;
+    }
+  }
 
   & .heading {
     color: #000;
@@ -440,8 +458,8 @@
 }
 
 .s-construction-progress {
-  padding: 150px 0;
 
+  padding: fluid(54, 150) 0 fluid(70, 150) 0;
   & .heading {
     margin-bottom: 50px;
     @media (max-width: $breakpoint-md) {
@@ -780,6 +798,7 @@
 
 
 }
-.s-general-plan{
+
+.s-general-plan {
   padding: 70px 0;
 }

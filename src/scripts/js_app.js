@@ -344,7 +344,7 @@ jQuery(function ($) {
                 if (!entry.isIntersecting)
                     return;
                 entry.target.classList.add("|", "animated");
-                $(entry.target).find(".stats__value span").each(function () {
+                $(entry.target).find(".stats__value--number").each(function () {
                     $(this).prop("Counter", 0).animate({
                         Counter: $(this).text(),
                     }, {
