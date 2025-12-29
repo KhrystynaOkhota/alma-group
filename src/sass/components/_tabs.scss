@@ -6,6 +6,9 @@
   &__scale {
     height: 100%;
     position: absolute;
+    @media (max-width: $breakpoint-md) {
+      display:none;
+    }
   }
 
   &__line {

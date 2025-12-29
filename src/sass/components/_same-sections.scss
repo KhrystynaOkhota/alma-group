@@ -52,6 +52,11 @@
     }
   }
 
+  & .date {
+    margin-top: 35px;
+    font-size: fluid(17, 20);
+  }
+
   &__inner {
     padding-top: 128px;
     @media (max-width: $breakpoint-md) {
