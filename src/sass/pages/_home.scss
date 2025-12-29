@@ -42,6 +42,7 @@
   }
 
   & .description {
+    font-size: fluid(20, 30);
     margin-bottom: 2.6875rem;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 35px;
@@ -179,7 +180,6 @@
 }
 
 
-
 .s-partners {
   padding-bottom: 130px;
   @media (max-width: $breakpoint-md) {
@@ -253,6 +253,8 @@
 
   & .description {
     margin-bottom: 60px;
+    font-size: fluid(18, 23);
+    line-height: 1.5;
   }
 
   & .form-control {
