@@ -67,14 +67,14 @@
   }
 
   & .social {
-    gap: 70px;
+    gap: 63px;
     position: relative;
     z-index: 2;
 
     @media (min-width: 1516px) {
       position: absolute;
-      right: 100px;
-      margin-top: 92px;
+      right: 94px;
+      margin-top: 94px;
     }
     @media (max-width: 1516px) {
       margin-top: 80px;

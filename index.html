@@ -202,7 +202,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16">
-                    <h1 class="heading heading-font h2 text-extrabold text-uppercase mb-70">
+                    <h1 class="heading heading-font h2 text-black text-uppercase mb-70 letter-spacing">
                         Комфортне житло Alma Group
                     </h1>
                     <div class="vision__wrap">
@@ -211,7 +211,7 @@
                                 <img src="assets/img/ad-1.svg" alt="" class="vision__icon">
                             </div>
                             <div class="vision__title text-bold">Якість</div>
-                            <div class="vision__text text-light">
+                            <div class="vision__text text-light ">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                                 <img src="assets/img/ad-2.svg" alt="" class="vision__icon">
                             </div>
                             <div class="vision__title text-bold">Спільнота</div>
-                            <div class="vision__text text-light">
+                            <div class="vision__text text-light ">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
@@ -231,7 +231,7 @@
                                 <img src="assets/img/ad-3.svg" alt="" class="vision__icon">
                             </div>
                             <div class="vision__title text-bold">Комфорт</div>
-                            <div class="vision__text text-light">
+                            <div class="vision__text text-light ">
                                 — натуральні матеріали, архітектура, яка не старіє.
                             </div>
                         </div>
@@ -254,7 +254,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-justify align-middle">
-                    <h1 class="heading text-extrabold h3 heading-font text-uppercase">
+                    <h1 class="heading text-extrabold h3 heading-font text-uppercase letter-spacing">
                         Про компанію
                     </h1>
 
@@ -265,7 +265,7 @@
             <div class="row m-row">
                 <div class="col-xl-12 col-lg-12 col-md-14 col-sm-16 col-xs-16 column">
                     <div class="description editor-style">
-                        <p>Вітаємо в котеджному містечку Alma Group
+                        <p>Вітаємо в котеджному містечку <b>Alma Group</b>
                             Реалізуючи проєкт, ми постійно питаємо себе, чи можливо зробити ще краще? І тільки
                             відповідаючи,
                             що вже обрали краще — продовжуємо
@@ -316,7 +316,7 @@
         <div class="container">
             <div class="rowv m-row">
                 <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column d-flex align-justify align-middle">
-                    <h3 class="heading text-extrabold h2 heading-font text-uppercase ">Alma
+                    <h3 class="heading text-extrabold h2 heading-font text-uppercase letter-spacing">Alma
                         Residence</h3>
                     <a href="about.html" class="btn btn-primary d-none d-md-block">Дізнатись більш</a>
                 </div>
@@ -1531,6 +1531,64 @@
 
 <script src="assets/js/app-swiper.js"></script>
 <script src="assets/js/js_app.min.js"></script>
+<!--<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+
+        const tabList = document.querySelector('.tab__list');
+        const tabs = [...document.querySelectorAll('.tab__item')];
+        const contents = [...document.querySelectorAll('.tab__content-item')];
+
+        const currentEl = document.querySelector('.tabs__current');
+        const totalEl = document.querySelector('.tabs__total');
+
+        const total = tabs.length;
+
+        /* ===== TOTAL COUNT ===== */
+        totalEl.textContent = total.toString().padStart(2, '0');
+
+        /* ===== WAIT FOR FONTS (IMPORTANT) ===== */
+        if (document.fonts) {
+            await document.fonts.ready;
+        }
+
+        /* ===== SCROLL HEIGHT (first 4 items) ===== */
+        if (total > 2) {
+            let height = 0;
+
+            tabs.slice(0, 4).forEach(tab => {
+                height += tab.getBoundingClientRect().height;
+            });
+
+            tabList.style.maxHeight = `${height}px`;
+            tabList.classList.add('is-scroll');
+        }
+
+        /* ===== ACTIVATE ===== */
+        function setActive(index) {
+            tabs.forEach(t => t.classList.remove('is-active'));
+            contents.forEach(c => c.style.display = 'none');
+
+            tabs[index].classList.add('is-active');
+            contents[index].style.display = 'block';
+
+            currentEl.textContent = (index + 1).toString().padStart(2, '0');
+
+            tabs[index].scrollIntoView({
+                block: 'nearest',
+                behavior: 'smooth'
+            });
+        }
+
+        /* ===== CLICK ===== */
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => setActive(index));
+        });
+
+        /* ===== INIT ===== */
+        setActive(0);
+
+    });
+</script>-->
 
 
 </body>

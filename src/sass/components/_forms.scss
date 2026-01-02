@@ -34,12 +34,11 @@ input, button {
 }
 
 .form {
-
   &-control {
     position: relative;
 
     &:not(&.no-margin) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       @media (max-width: $breakpoint-lg) {
         margin-bottom: 20px;
       }
