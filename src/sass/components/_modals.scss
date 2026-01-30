@@ -278,9 +278,11 @@
   left: -100%;
   transition-delay: 0.3s;
   display: block;
+
   &.active {
     left: 0;
     transition-delay: 0s;
+
     & .bg-layer {
       opacity: 1;
     }
@@ -292,12 +294,11 @@
     right: 0;
     top: -6.25rem;
     bottom: -6.25rem;
-    background:rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     opacity: 0;
     transition: opacity ease-out .3s;
   }
 }
-
 
 
 .popup-content {
@@ -320,12 +321,14 @@
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   opacity: 0;
+
   &:after {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
   }
+
   &.active {
     -ms-transform: scale(1);
     transform: scale(1);
@@ -337,8 +340,9 @@
     -o-transition: transform .3s ease-out, opacity .3s ease-out, left 0s 0s;
     transition: transform .3s ease-out, opacity .3s ease-out, left 0s 0s;
     transition: transform .3s ease-out, opacity .3s ease-out, left 0s 0s, -webkit-transform .3s ease-out;
-
+    z-index: 5;
   }
+
   & .layer-close {
     position: absolute;
     left: 0;
@@ -350,8 +354,8 @@
   &[data-rel="inspection"] {
     & .popup {
       &-container {
-        padding: fluid(20,90) fluid(10,120);
-        max-width: fluid(355,830);
+        padding: fluid(20, 90) fluid(10, 120);
+        max-width: fluid(355, 830);
         background: rgba(44, 56, 55, 1);
       }
 
@@ -387,9 +391,26 @@
     width: 100%;
     max-width: 304px;
   }
+
+  &[data-rel="cottagee"] {
+    & .popup-container {
+      max-width: 1400px;
+      background: #2C3837;
+      padding: 60px;
+
+      & .swiper-thumbs {
+        &-top {
+          margin-bottom: 30px;
+
+          & img {
+            aspect-ratio: 4 / 2;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
 }
-
-
 
 
 .popup-container {
@@ -407,8 +428,10 @@
 .popup-container .btn-close {
   position: absolute;
   z-index: 10;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 30px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .popup-align {
@@ -417,7 +440,7 @@
   padding: var(--sp-md);
 }
 
-.popup-info>*+* {
+.popup-info > * + * {
   margin-top: 0.75rem;
 }
 

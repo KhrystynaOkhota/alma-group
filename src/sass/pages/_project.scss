@@ -67,6 +67,9 @@
       overflow: hidden;
     }
   }
+  & .cottage__completion {
+    margin-bottom: 33px;
+  }
 
 }
 
@@ -803,9 +806,6 @@
   }
 
 
-  & .cottage__completion {
-    margin-bottom: 33px;
-  }
 
   & .btn {
     width: 100%;

@@ -5,6 +5,11 @@
 .s-hero {
   height: 100vh;
   display: flex;
+  @media (max-width: $breakpoint-md) {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    height: auto;
+  }
 
   & .img {
     opacity: .5;

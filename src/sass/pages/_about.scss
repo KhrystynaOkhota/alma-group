@@ -234,6 +234,9 @@
 
   & .cms-content {
     color: #DFD8CF;
+    @media (max-width: $breakpoint-md) {
+      color: #000;
+    }
   }
 
   & .heading {
@@ -248,10 +251,9 @@
     margin-bottom: 70px;
 
 
-
     @media (min-width: $breakpoint-md) {
       column-count: 2;
-      column-gap: 25x;
+      column-gap: 25px;
     }
     @media (max-width: $breakpoint-xl) {
       margin-bottom: 27px;
